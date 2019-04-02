@@ -1,6 +1,6 @@
 ---
 title:      "Git Bisect"
-slug:       "git-bisect"
+slug:       "2019/03/13/git-bisect"
 subtitle:   "Find the bug-introducing commit with Git Bisect"
 date:       2019-03-13
 cover:      "./background.png"

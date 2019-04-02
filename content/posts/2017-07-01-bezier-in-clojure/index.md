@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Visualising Bézier Curves"
-slug:       "visualising-bezier-curves"
+slug:       "2017/07/01/visualising-bezier-curves"
 subtitle:   "Experimenting with Clojure"
 date:       2017-07-01
 authors:     [maarten]

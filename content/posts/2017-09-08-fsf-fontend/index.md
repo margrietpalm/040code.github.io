@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Full Stack Fest 2017"
-slug:       "full-stack-fest-2017-frontend"
+slug:       "2017/09/08/full-stack-fest-2017-frontend"
 subtitle:   "Frontend days"
 date:       2017-09-08
 authors:    [jeroen, niek]

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Immutable Infrastructure"
-slug:       "immutable-infrastructure-taipei"
+slug:       "2018/05/26/immutable-infrastructure-taipei"
 subtitle:   "Cloud Native User Group Taipei"
 date:       2018-05-26
 authors:     [niek]

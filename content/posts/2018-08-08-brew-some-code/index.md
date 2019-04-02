@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Microhack Brew your code"
-slug:       "microhack-brew-your-code"
+slug:       "2018/08/08/microhack-brew-your-code"
 subtitle:   "How to create a brew package"
 date:       2018-08-08
 authors:     [jeroen]

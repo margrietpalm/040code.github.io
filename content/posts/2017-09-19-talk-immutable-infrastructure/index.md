@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Immutable Infrastructure"
-slug:       "immutable-infrastructure"
+slug:       "2017/09/19/immutable-infrastructure"
 subtitle:   "Devops Days Riga 2017"
 date:       2017-09-19
 authors:     [niek]

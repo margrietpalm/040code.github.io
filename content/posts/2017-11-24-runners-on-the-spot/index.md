@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Runners on the Spot"
-slug:       "runners-on-the-spot"
+slug:       "2017/12/09/runners-on-the-spot"
 subtitle:   "Auto scaling GitLab runners on AWS with Terraform"
 date:       2017-12-09
 authors:     [niek]

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Docker Multi Stage Builds"
-slug:       "docker-multi-stage-builds"
+slug:       "2017/05/07/docker-multi-stage-builds"
 subtitle:   "Building and shipping in one Docker build"
 date:       2017-05-07
 authors:     [niek]

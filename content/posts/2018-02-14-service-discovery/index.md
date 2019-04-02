@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Service Discovery on AWS"
-slug:       "service-discovery-on-aws"
+slug:       "2018/02/14/service-discovery-on-aws"
 subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2018-02-14
 authors:     [niek]

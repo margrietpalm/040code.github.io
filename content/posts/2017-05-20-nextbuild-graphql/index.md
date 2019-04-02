@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "GraphQL"
-slug:       "graphql"
+slug:       "2017/05/20/graphql"
 subtitle:   "Nextbuild talk - The Next API Language"
 date:       2017-05-20 23:50
 authors:     [niek]

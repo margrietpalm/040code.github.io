@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Mob Programming"
-slug:       "mob-programming"
+slug:       "2019/03/15/mob-programming"
 subtitle:   "Learnings of a workshop"
 date:       2019-03-15
 authors:    [stefan]

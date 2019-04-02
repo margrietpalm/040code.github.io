@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Discover the exposed port"
-slug:       "discovery-agent"
+slug:       "2019/04/20/discovery-agent"
 subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2017-04-20 14:22:00
 authors:     [niek]

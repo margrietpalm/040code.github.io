@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Periodic builds in GitLab"
-slug:       "gitlab-perodic-build"
+slug:       "2017/04/21/gitlab-perodic-build"
 subtitle:   "Trigger builds based on a crontab"
 date:       2017-04-21 12:21:00
 authors:     [niek]

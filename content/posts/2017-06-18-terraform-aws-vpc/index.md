@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Coding a VPC in Terraform"
-slug:       "coding-a-vpc-in-terraform"
+slug:       "2017/06/18/coding-a-vpc-in-terraform"
 subtitle:   "A terraform module for a VPC with Private Subnets"
 date:       2017-06-18
 authors:     [niek]

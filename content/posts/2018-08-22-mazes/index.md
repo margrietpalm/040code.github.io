@@ -1,7 +1,7 @@
 ---
 layout:          post
 title:           "Maze Generation"
-slug:            "maze-generation"
+slug:            "2018/08/22/maze-generation"
 subtitle:        "Generating Mazes from the REPL"
 authors:         [maarten]
 cover:      "./htc-roof.jpg"

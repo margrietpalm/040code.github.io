@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "MicroHack Fargate"
-slug:       "microhack-fargate"
+slug:       "2018/01/30/microhack-fargate"
 subtitle:   "Running serverless containers with Terraform"
 date:       2018-01-30
 authors:     [niek]

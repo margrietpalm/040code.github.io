@@ -1,7 +1,7 @@
 ---
 layout:          post
 title:           "Verlet Integration"
-slug:            "verlet-integration"
+slug:            "2018/03/04/verlet-integration"
 subtitle:        "Physics Simulation in Clojure"
 authors:         [maarten]
 cover:      "./ehv-noord.jpg"
