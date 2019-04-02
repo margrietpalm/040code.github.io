@@ -6,7 +6,7 @@ subtitle:   "Frontend days"
 date:       2017-09-08
 authors:    [jeroen, niek]
 cover: "./graffiti-hooftlaan.jpg"
-tags:       [aframe, serviceworkers, css, javascript, ast, svg, blockchain, react]
+tags:       [fullstack, aframe, serviceworkers, css, javascript, ast, svg, blockchain, react]
 ---
 
 # Full Stack Fest 2017
