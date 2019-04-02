@@ -6,6 +6,7 @@ subtitle:        "Physics Simulation in Clojure"
 authors:         [maarten]
 header-img:      "img/ehv-noord.jpg"
 tags:            [clojure, functional]
+date:            "2018-03-04"
 published:       true
 ---
 
