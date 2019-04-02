@@ -5,7 +5,6 @@ slug:       "graphql"
 subtitle:   "Nextbuild talk - The Next API Language"
 date:       2017-05-20 23:50
 authors:     [niek]
-header-img: "img/radioroyaal.png"
 tags:       [graphql]
 ---
 

@@ -4,7 +4,7 @@ title:           "Verlet Integration"
 slug:            "verlet-integration"
 subtitle:        "Physics Simulation in Clojure"
 authors:         [maarten]
-header-img:      "img/ehv-noord.jpg"
+cover:      "img/ehv-noord.jpg"
 tags:            [clojure, functional]
 date:            "2018-03-04"
 published:       true
@@ -237,7 +237,7 @@ Points and therefore Points should bounce off of them:
 To explain what happens here, a picture might help.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/verlet-physics/world-constraints.png"
+    <img src="./verlet-physics/world-constraints.png"
     alt="apply world constraints diagram">
 </a>
 
@@ -270,7 +270,7 @@ Stick constraint is to move the Points at the end of the Stick to the configured
 length of the Stick.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/verlet-physics/stick-constraints.png"
+    <img src="./verlet-physics/stick-constraints.png"
     alt="apply stick constraints diagram">
 </a>
 
@@ -298,7 +298,7 @@ These arguments are heavily destructured. To understand what happens precisely,
 the next picture might be helpful:
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/verlet-physics/stick-math.png"
+    <img src="./verlet-physics/stick-math.png"
     alt="stick math diagram">
 </a>
 

@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "Periodic builds in GitLab"
-slug:       "periodic-builds-in-gitlab"
+slug:       "2017-04-21-gitlab-perodic-build"
 subtitle:   "Trigger builds based on a crontab"
 date:       2017-04-21 12:21:00
 authors:     [niek]
-header-img: "img/lichtjesroute.jpg"
+cover: "lichtjesroute.jpg"
 tags: [gitlab, docker]
 ---
 I am using GitLab CI now for more than a year and I really love the features in GitLab. GitLab provides a complete and powerful tool for day to day development. And of course, there are always feature that you miss. Until now there is no support for periodic builds, in the coming release the [feature](https://gitlab.com/gitlab-org/gitlab-ce/issues/2989) will be shipped as experimental feature and in the next one is should be general available. But in case you must deal for some reason with an older version, a work around is described below as I used last year.
@@ -21,7 +21,7 @@ To setup a periodic build you first need to be able to trigger a build in some w
 - Make a note of the TOKEN and trigger URL. An curl example for trigger is shown as well.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/gitlabtrigger.png" alt="GitLab trigger">
+    <img src="./gitlabtrigger.png" alt="GitLab trigger">
 </a>
 
 Next we test that we are able to trigger the build remotely be executing the `curl` command below.

@@ -5,7 +5,7 @@ slug:       "full-stack-fest-2017-frontend"
 subtitle:   "Frontend days"
 date:       2017-09-08
 authors:    [jeroen, niek]
-header-img: "img/graffiti-hooftlaan.jpg"
+cover: "./graffiti-hooftlaan.jpg"
 tags:       [aframe, serviceworkers, css, javascript, ast, svg, blockchain, react]
 ---
 

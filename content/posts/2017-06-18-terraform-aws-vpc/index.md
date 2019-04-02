@@ -5,7 +5,7 @@ slug:       "coding-a-vpc-in-terraform"
 subtitle:   "A terraform module for a VPC with Private Subnets"
 date:       2017-06-18
 authors:     [niek]
-header-img: "img/piazza.jpg"
+cover: "./piazza.jpg"
 tags:       [aws, terraform]
 comments:   false
 ---
@@ -40,7 +40,7 @@ provider "aws" {
 ```
 We are now ready to, step-by-step, add the terraform resources to create the VPC setup. First, have a look on the VPC setup as shown in the picture below.
 <a href="#">
-    <img src="{{ site.baseurl }}/img/nat-gateway-diagram.png" alt="nat-gateway-diagram">
+    <img src="./nat-gateway-diagram.png" alt="nat-gateway-diagram">
 </a>
 
 We will start by creating the VPC itself: add the following snippet to your `main.tf`

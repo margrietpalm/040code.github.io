@@ -5,7 +5,7 @@ slug:       "microhack-brew-your-code"
 subtitle:   "How to create a brew package"
 date:       2018-08-08
 authors:     [jeroen]
-header-img: "assets/2018-08-08-brew-some-code/vanmoll-brew.jpg"
+cover: "assets/2018-08-08-brew-some-code/vanmoll-brew.jpg"
 tags:       [microhack, mac, brew]
 ---
 

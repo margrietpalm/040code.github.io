@@ -5,7 +5,7 @@ slug:       "immutable-infrastructure"
 subtitle:   "Devops Days Riga 2017"
 date:       2017-09-19
 authors:     [niek]
-header-img: "img/strijp-s-ols.png"
+cover: "./strijp-s-ols.png"
 tags:       [terraform, aws, docker, microservices]
 ---
 
@@ -36,7 +36,7 @@ During the talk, I demonstrated a hello world example, see the link above. This 
 The second example I have shown, is creating an immutable infrastructure to server docker containers. The picture below descibes briefly the enviroment that will be cretaed.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/20170919-immutable-infra/ecs-black.png" alt="ecs-diagram">
+    <img src="./20170919-immutable-infra/ecs-black.png" alt="ecs-diagram">
 </a>
 
 The example also creates log groups in cloudwatch to capture the logging of the ecs agent and the running containers (services).

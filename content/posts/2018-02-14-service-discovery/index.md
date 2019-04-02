@@ -5,7 +5,7 @@ slug:       "service-discovery-on-aws"
 subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2018-02-14
 authors:     [niek]
-header-img: "assets/2018-02-14-service-discovery/holstlaan-dommel.jpg"
+cover: "assets/2018-02-14-service-discovery/holstlaan-dommel.jpg"
 tags: [aws, spring, docker]
 ---
 
@@ -17,7 +17,7 @@ Looking back to the last years problem. A Spring service running in a container 
 At that time I have solved this problem by adding an agent that can be called via a REST interface to lookup the exposed port based on the container id and internal port. The agent returns the external port, and the service can use this information to register itself to Eureka. This approach worked well but since the ECS agent is now shipped with a feature to retrieve the meta data we do not need longer an extra agent anymore.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/ecs1.png" height="80%" width="80%" alt="ECS">
+    <img src="./ecs1.png" height="80%" width="80%" alt="ECS">
 </a>
 
 ### Solution

@@ -5,7 +5,7 @@ slug:       "graphql-geecon"
 subtitle:   "GeeCON talk - The Next API Language"
 date:       2017-10-19
 authors:     [niek]
-header-img: "img/irisbuurt.jpg"
+cover: "./irisbuurt.jpg"
 tags:       [graphql]
 ---
 

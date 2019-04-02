@@ -5,7 +5,7 @@ slug:       "microhack-zappa-io"
 subtitle:   "A quick test for using the Zappa.io serverless framework to run a python service in the cloud"
 date:       2017-10-01
 authors:     [jeroen]
-header-img: "img/htc-lake.jpg"
+cover: "./htc-lake.jpg"
 tags:       [serverless, microhack, python, aws, cloud]
 ---
 

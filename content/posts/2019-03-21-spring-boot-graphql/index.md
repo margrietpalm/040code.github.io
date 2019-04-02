@@ -13,7 +13,7 @@ tags:
 
 <!--
 <!-- authors:     [niek] -->
-#header-img: "./glow-lichttoren.jpg"
+#cover: "./glow-lichttoren.jpg"
 imageTw:    "2019-03-21_spring-boot-graphql/glow-lichttoren.jpg"
 imageFb:    "2019-03-21_spring-boot-graphql/glow-lichttoren.jpg"
 tags: [graphql, spring, java]

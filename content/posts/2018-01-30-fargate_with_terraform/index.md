@@ -5,7 +5,7 @@ slug:       "microhack-fargate"
 subtitle:   "Running serverless containers with Terraform"
 date:       2018-01-30
 authors:     [niek]
-header-img: "assets/2018-01-30-fargate_with_terraform/img/strijps-containers.jpg"
+cover: "assets/2018-01-30-fargate_with_terraform/img/strijps-containers.jpg"
 tags:       [aws, terraform, docker, microhack]
 enable_asciinema: 1
 ---

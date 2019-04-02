@@ -5,7 +5,7 @@ slug:       "full-stack-fest-2018"
 subtitle:   "Backend days"
 date:       2018-09-05
 authors:    [jeroen, niek]
-header-img: "assets/2018-09_fullstackfest/kanaal_nre.jpg"
+cover: "assets/2018-09_fullstackfest/kanaal_nre.jpg"
 tags:       [iot, cloud, fullstack, microservices, security]
 comments:   true
 ---

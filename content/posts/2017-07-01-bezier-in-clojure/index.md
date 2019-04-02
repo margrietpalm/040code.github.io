@@ -5,7 +5,7 @@ slug:       "visualising-bezier-curves"
 subtitle:   "Experimenting with Clojure"
 date:       2017-07-01
 authors:     [maarten]
-header-img: "img/htc.jpg"
+cover: "./htc.jpg"
 tags:       [clojure, bézier, functional, incanter]
 comments:   false
 ---
@@ -73,7 +73,7 @@ For the moment I only need Bézier curves with 3 control points: a start point, 
 Quoting the [Wikipedia page](https://en.wikipedia.org/wiki/Bézier_curve): "A quadratic Bézier curve is the path traced by the function B(t), given points P0, P1, and P2":
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/bezier-formula.png" alt="bezier-formula">
+    <img src="./bezier-formula.png" alt="bezier-formula">
 </a>
 
 So given 3 points (P0, P1 and P2) I should be able to describe the curve with this math function. Conceptually a pen is drawing the curve by starting on P0 on moment `t = 0` and following the curve described by this formula and the position of the 3 points until it hits the end point at `t = 1`. The only thing this resulting `B(t)` function needs is the moment `t` and it will calculate the X or Y coördinate at that particular moment.
@@ -189,7 +189,7 @@ This function basically states:
 ```
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/incanter-plots.png" alt="incanter-plots">
+    <img src="./incanter-plots.png" alt="incanter-plots">
 </a>
 
 The generated charts will be opened in external java windows. Sometimes they stay hidden behind other windows on your screen, so you might have to bring your java windows to the foreground in order to see them.
