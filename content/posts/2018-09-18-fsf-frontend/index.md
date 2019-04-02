@@ -75,9 +75,9 @@ Andrew Louis [@hyfen](https://twitter.com/hyfen), Imagine you can manage all you
 ### Everything in sketchnotes..
 A big shoutout to Christin Westermann ([@_c16n_](https://twitter.com/_c16n_)) for creating these sketchnotes!
 
-<img src="{{ site.baseurl }}/./fullstackfest-2018-05.jpg"  alt="fullstackfest-2018-05" width="100%">
+<img src="./fullstackfest-2018-05.jpg"  alt="fullstackfest-2018-05" width="100%">
 
-<img src="{{ site.baseurl }}/./fullstackfest-2018-06.jpg" alt="fullstackfest-2018-06" width="100%">
+<img src="./fullstackfest-2018-06.jpg" alt="fullstackfest-2018-06" width="100%">
 
 ## Day 2
 

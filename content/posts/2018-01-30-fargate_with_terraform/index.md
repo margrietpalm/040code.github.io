@@ -5,7 +5,7 @@ slug:       "microhack-fargate"
 subtitle:   "Running serverless containers with Terraform"
 date:       2018-01-30
 authors:     [niek]
-cover: "assets/2018-01-30-fargate_with_terraform/img/strijps-containers.jpg"
+cover: "./strijps-containers.jpg"
 tags:       [aws, terraform, docker, microhack]
 enable_asciinema: 1
 ---
@@ -24,7 +24,7 @@ Before you start you need to have programmatically access to an AWS account and 
 Before we can create our containers, we have to create a few infrastructural components. For this example we create an own VPC including public and private subnets. An ECS cluster for our containers, and a CloudWatch log group for centralized logging. The diagram below shows an abstract view of the deployment we are going to create, this view contains two in instead of the 3 availability zones we use.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/img/ecs-fargate-diagram.png" alt="Fargate">
+    <img src="./ecs-fargate-diagram.png" alt="Fargate">
 </a>
 
 We start with defining the VPC, we choose `us-east-1` since Fargate is only available in this region. In the blog post [Coding a VPC in Terraform](/2017/06/18/terraform-aws-vpc/) you find more details about how this VPC module is structured.
@@ -69,7 +69,7 @@ resource "aws_cloudwatch_log_group" "log_group" {
 ```
 Now the first part is defined we execute a `terraform apply` and inpect the results.
 
-<asciinema-player src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-1.json"
+<asciinema-player src="assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-1.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
@@ -141,12 +141,12 @@ resource "aws_ecs_task_definition" "task" {
 ```
 Time to verify the code is working by executing a `terraform apply`
 
-<asciinema-player src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-2.json"
+<asciinema-player src="assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-2.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.0">
 </asciinema-player>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/img/container-definition.png" alt="Fargate">
+    <img src="./container-definition.png" alt="Fargate">
 </a>
 
 We have still nothing running but you can already see the different parts in de AWS console. We have now a VPC, CloudWatch log group, ECS cluster and task definition available. The next logical step in de AWS console would be to create the service, and find out at the latest step that you need to create a load balancer first. So in code we will define the load balancer first. The load balancer will route traffic via HTTP to the container.
@@ -208,7 +208,7 @@ output "blog_url" {
 ```
 Again we verify our new code by executing a `terraform apply`.
 
-<asciinema-player src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-3.json"
+<asciinema-player src="assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-3.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
@@ -271,14 +271,14 @@ resource "aws_ecs_service" "service" {
 ```
 That is the last part of coding, run `terraform apply` and inspect the result.
 
-<asciinema-player src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-4.json"
+<asciinema-player src="assets/2018-01-30-fargate_with_terraform/asciinema/fargate-terraform-4.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
 That is all, we have now our blog running as serverless container in AWS Fargate.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/img/ecs-fargate.png" alt="Fargate">
+    <img src="./ecs-fargate.png" alt="Fargate">
 </a>
 
 
@@ -379,12 +379,12 @@ module "blog-ec" {
 
 That is all, all sample code is available at [GitHub](https://github.com/npalm/blog_terraform_aws_fargate) see subdir `fargate-ec2`. Time to run a `terraform apply` to see if it works.
 
-<asciinema-player src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/asciinema/fargate-ec2.json"
+<asciinema-player src="assets/2018-01-30-fargate_with_terraform/asciinema/fargate-ec2.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
 In the output you will find the two endpoint links to the blogs. After a few minutes both links will be active. You can also see the service running on the Amazon console, simply navigate to the ECS console and select the cluster. You should see now one service on Fargate and the second one on EC2.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-01-30-fargate_with_terraform/img/ecs-fargate-2.png" alt="Fargate">
+    <img src="./ecs-fargate-2.png" alt="Fargate">
 </a>

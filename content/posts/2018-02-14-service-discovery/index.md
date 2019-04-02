@@ -5,7 +5,7 @@ slug:       "service-discovery-on-aws"
 subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2018-02-14
 authors:     [niek]
-cover: "assets/2018-02-14-service-discovery/holstlaan-dommel.jpg"
+cover: "./holstlaan-dommel.jpg"
 tags: [aws, spring, docker]
 ---
 
@@ -24,7 +24,7 @@ At that time I have solved this problem by adding an agent that can be called vi
 The approach to register the container to the discovery service remains the same. During container startup, the start script obtains the external ip address, and docker exposed port. The discovered information will be passed to the Spring Boot application using environment variables. At application start the Spring service discovery client uses the environment variables to register the application to Eureka.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-02-14-service-discovery/sequence.png" height="100%" width="98%"  alt="Sequence Diagram">
+    <img src="./sequence.png" height="100%" width="98%"  alt="Sequence Diagram">
 </a>
 
 Before we are able retrieve information about the container (in the container) we need to enable the feature on the ECS instance. For more details about this feature see the [Amazon documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-metadata.html). To enable the meta data in the container you need to set `ECS_ENABLE_CONTAINER_METADATA` to `true`. This can be easily done by adding the line below the user data script.

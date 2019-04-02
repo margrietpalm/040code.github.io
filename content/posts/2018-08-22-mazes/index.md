@@ -4,7 +4,7 @@ title:           "Maze Generation"
 slug:            "maze-generation"
 subtitle:        "Generating Mazes from the REPL"
 authors:         [maarten]
-cover:      "assets/2018-08-22-mazes/htc-roof.jpg"
+cover:      "./htc-roof.jpg"
 tags:            [clojure, functional]
 date:            "2018-08-22"
 published:       true
@@ -341,7 +341,7 @@ plugin again. Which reminds me that during my holiday I visited a picturesque
 CIDER factory in France. Cheers!
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-08-22-mazes/CIDER.png"
+    <img src="./CIDER.png"
     alt="CIDER factory">
 </a>
 
