@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "MicroHack Zappa.io"
-slug:       "microhack-zappa-io"
+slug:       "2017/10/01/microhack-zappa-io"
 subtitle:   "A quick test for using the Zappa.io serverless framework to run a python service in the cloud"
 date:       2017-10-01
 authors:     [jeroen]
-header-img: "img/htc-lake.jpg"
+cover: "./htc-lake.jpg"
 tags:       [serverless, microhack, python, aws, cloud]
 ---
 
@@ -22,7 +22,7 @@ The second talk I'm frequently think of was the talk by Rich Jones ([@GUNdotIO](
 ## What's the experiment
 
 I wanted to test the cli zappa.io with a simple python Flask app. The specs are simple: A service which reverses an input string running in the cloud with zappa.io. Serverless services are very interesting, because it's based on lambdas and they typically run for a few milliseconds. So the costs are very low, utilization is very high.
-I've asked some colleagues to join me on a friday afternoon experiment and [Jos Beijk](https://github.com/13B-MSP) wanted to help. 
+I've asked some colleagues to join me on a friday afternoon experiment and [Jos Beijk](https://github.com/13B-MSP) wanted to help.
 
 ## Let's do it!
 
@@ -33,7 +33,7 @@ If you do not have an AWS account, don't worry. Just signup and the first 1.000.
 
 ## The experiment
 
-<script type="text/javascript" src="https://asciinema.org/a/139025.js" id="asciicast-139025" async data-speed="2" ></script> 
+<script type="text/javascript" src="https://asciinema.org/a/139025.js" id="asciicast-139025" async data-speed="2" ></script>
 
 GitHub: [https://github.com/JeroenKnoops/zappa-string-reverser](https://github.com/JeroenKnoops/zappa-string-reverser)
 
@@ -50,7 +50,7 @@ app = Flask(__name__)
 @app.route('/<string:str>', methods=["GET"])
 def reverse_str(str):
     return str[::-1]
-    
+
 if __name__ == '__main__':
     app.run()
 ```
@@ -88,12 +88,12 @@ Edit this file to add more service specific configurations:
 ``` json
 {
     "dev": {
-        "app_function": "string_reverser.app", 
+        "app_function": "string_reverser.app",
         "keep_warm": false,
         "debug": true,
         "log_level": "DEBUG",
-        "aws_region": "eu-west-1", 
-        "profile_name": "default", 
+        "aws_region": "eu-west-1",
+        "profile_name": "default",
         "http_methods": ["GET"],
         "parameter_depth": 1,
         "timeout_seconds": 300,
@@ -111,7 +111,7 @@ zappa deploy dev
 
 The output is the url to our service. You see it's https out-of-the-box.. :)
 
-### Test our service 
+### Test our service
 The previous step will output an url to our service. In my case: https://z9cxt9gky6.execute-api.eu-west-1.amazonaws.com/dev/
 
 Append the test string behind it and check the result.
@@ -136,10 +136,10 @@ You can do various things with the zappa cli.
 You can view logging for example:
 ```
 zappa tail dev
-``` 
+```
 
 See help for more info:
-``` 
+```
 zappa --help
 ```
 

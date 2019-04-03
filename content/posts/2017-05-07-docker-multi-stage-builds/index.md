@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "Docker Multi Stage Builds"
-slug:       "docker-multi-stage-builds"
+slug:       "2017/05/07/docker-multi-stage-builds"
 subtitle:   "Building and shipping in one Docker build"
 date:       2017-05-07
 authors:     [niek]
-header-img: "img/containers-strijp-s.png"
+cover: "./containers-strijp-s.png"
 tags:       [docker]
 ---
 
@@ -41,7 +41,7 @@ Now we have created a clean Docker images that only containes the needed librari
 Docker 17.05.x brings a new feature; it is now possible to define a [multi stage builds](https://docs.docker.com/engine/userguide/eng-image/multistage-build/) in one Dockerfile. The Dockerfile can contain multiple FROM lines and each stage starts with a new FROM line and a fresh context. You can copy artifacts from stage to stage.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/docker-multi-stages-build.png" alt="docker-multi-stages-build">
+    <img src="./docker-multi-stages-build.png" alt="docker-multi-stages-build">
 </a>
 
 Now it is time to have a second look on the same example. Instead of passing the build arguments and mounting our sources, we will build our software using a single Dockerfile.

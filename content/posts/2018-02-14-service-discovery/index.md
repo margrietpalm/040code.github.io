@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "Service Discovery on AWS"
-slug:       "service-discovery-on-aws"
+slug:       "2018/02/14/service-discovery-on-aws"
 subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2018-02-14
 authors:     [niek]
-header-img: "assets/2018-02-14-service-discovery/holstlaan-dommel.jpg"
+cover: "./holstlaan-dommel.jpg"
 tags: [aws, spring, docker]
 ---
 
@@ -17,14 +17,14 @@ Looking back to the last years problem. A Spring service running in a container 
 At that time I have solved this problem by adding an agent that can be called via a REST interface to lookup the exposed port based on the container id and internal port. The agent returns the external port, and the service can use this information to register itself to Eureka. This approach worked well but since the ECS agent is now shipped with a feature to retrieve the meta data we do not need longer an extra agent anymore.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/ecs1.png" height="80%" width="80%" alt="ECS">
+    <img src="./ecs1.png" height="80%" width="80%" alt="ECS">
 </a>
 
 ### Solution
 The approach to register the container to the discovery service remains the same. During container startup, the start script obtains the external ip address, and docker exposed port. The discovered information will be passed to the Spring Boot application using environment variables. At application start the Spring service discovery client uses the environment variables to register the application to Eureka.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2018-02-14-service-discovery/sequence.png" height="100%" width="98%"  alt="Sequence Diagram">
+    <img src="./sequence.png" height="100%" width="98%"  alt="Sequence Diagram">
 </a>
 
 Before we are able retrieve information about the container (in the container) we need to enable the feature on the ECS instance. For more details about this feature see the [Amazon documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-metadata.html). To enable the meta data in the container you need to set `ECS_ENABLE_CONTAINER_METADATA` to `true`. This can be easily done by adding the line below the user data script.

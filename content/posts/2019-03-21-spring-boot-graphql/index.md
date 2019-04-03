@@ -1,5 +1,5 @@
 ---
-slug:       "spring-boot-graphql"
+slug:       "2019/03/21/spring-boot-graphql"
 title:      "GraphQL + Spring Boot"
 subtitle:   "Queries, mutations and subscription in Java"
 date:       2019-03-21
@@ -8,15 +8,8 @@ imageTw:    "./glow-lichttoren.jpg"
 imageFb:    "./glow-lichttoren.jpg"
 tags:
   - graphql
-
----
-
-<!--
-<!-- authors:     [niek] -->
-#header-img: "./glow-lichttoren.jpg"
-imageTw:    "2019-03-21_spring-boot-graphql/glow-lichttoren.jpg"
-imageFb:    "2019-03-21_spring-boot-graphql/glow-lichttoren.jpg"
-tags: [graphql, spring, java]
+  - spring
+  - java
 
 ---
 title: "What's new in gatsby-starter-morning-dew v1.1?"

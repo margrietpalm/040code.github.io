@@ -1,16 +1,13 @@
 ---
 title:      "Git Bisect"
-slug:       "git-bisect"
+slug:       "2019/03/13/git-bisect"
 subtitle:   "Find the bug-introducing commit with Git Bisect"
 date:       2019-03-13
-language: en
-cover: ./cover-balloons.jpg
-imageTw: ./gatsby-starter-morning-dew-v1-1-tw.png
-imageFb: ./gatsby-starter-morning-dew-v1-1-fb.png
+cover:      "./background.png"
 ---
 
 I want to tell you a little story about what happened to me a few days ago.
-I went to the office and a colleague of mine was not very happy. This is strange because I work for a very nice company.. What happened? I asked him what was wrong. It turned out that he updated a lot of dependencies and some code for a certain service. And now the SonarQube reporting was not working anymore with a very strange message: HTTP Error 502 Bad gateway.. 
+I went to the office and a colleague of mine was not very happy. This is strange because I work for a very nice company.. What happened? I asked him what was wrong. It turned out that he updated a lot of dependencies and some code for a certain service. And now the SonarQube reporting was not working anymore with a very strange message: HTTP Error 502 Bad gateway..
 
 I decided to help him, because we don't work alone and especially when you're stuck (and frustrated) at something it's best to include other human beings.
 
@@ -26,7 +23,7 @@ In order to follow the instructions, you need the following things:
 - Clone [https://github.com/JeroenKnoops/rust-example](https://github.com/JeroenKnoops/rust-example). This is an example codebase with a bug we want to find.
 
 ## Rust example
-The rust-example is very simple. It's a rust library with four functions namely: `add`, `substract`, `multiply` and `division`. By no means this should ever be used in real systems, this repo only exists as example for this blog post. It has 9 commits. 
+The rust-example is very simple. It's a rust library with four functions namely: `add`, `substract`, `multiply` and `division`. By no means this should ever be used in real systems, this repo only exists as example for this blog post. It has 9 commits.
 
 ```
 $ git log --pretty=format:"%h - %an, %ad : %s"
@@ -46,7 +43,7 @@ It starts with adding two functions, adding travis-ci, add some documentation, m
 Of course it has some tests and I've tested everything manually before I commit... But for some reason at the end, the `substract` function is not working anymore..
 Whoops.. I've tested it manually, but for some reason I've forgot to add a test for it..
 
-## Let's create a test 
+## Let's create a test
 
 We're creating a test in `/tests/bug.rs` to show the bug.
 We will use this test to check in which commit the bug was introduced.
@@ -67,12 +64,12 @@ cargo test --test bug
 ```
 
 Test on `master` should fail:
-<asciinema-player src="{{ site.baseurl }}/assets/2019-03-11-git-bisect/git-bisect-1.json"
+<asciinema-player src="assets/2019-03-11-git-bisect/git-bisect-1.json"
   cols="166" rows="18">
 </asciinema-player>
 
 Test on first commit (`030b725`) should not fail:
-<asciinema-player src="{{ site.baseurl }}/assets/2019-03-11-git-bisect/git-bisect-2.json"
+<asciinema-player src="assets/2019-03-11-git-bisect/git-bisect-2.json"
   cols="166" rows="18">
 </asciinema-player>
 
@@ -104,11 +101,11 @@ git bisect run cargo test --test bug
 
 After the test, reset the HEAD to the first place.
 ```bash
-git bisect reset 
+git bisect reset
 ```
 
 Let's see this in action:
-<asciinema-player src="{{ site.baseurl }}/assets/2019-03-11-git-bisect/git-bisect-3.json"
+<asciinema-player src="assets/2019-03-11-git-bisect/git-bisect-3.json"
   cols="166" rows="18">
 </asciinema-player>
 
@@ -217,7 +214,7 @@ Commit which introduced the bug:
 </a>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2019-03-11-git-bisect/git-bisect-gitx.png" alt="gitx">
+    <img src="assets/2019-03-11-git-bisect/git-bisect-gitx.png" alt="gitx">
 </a>
 
 ## Results
@@ -243,4 +240,3 @@ Imagine a website which overtime became very slow. Try to create a test which me
 page. This test should fail when the performance is below a certain threshold. This can be a complete end-to-end test.
 Now you will find the exact place where the introduction of a small stupid javascript library caused a big performance
 problem.
-

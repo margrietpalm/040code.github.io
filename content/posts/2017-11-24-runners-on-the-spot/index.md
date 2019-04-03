@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "Runners on the Spot"
-slug:       "runners-on-the-spot"
+slug:       "2017/12/09/runners-on-the-spot"
 subtitle:   "Auto scaling GitLab runners on AWS with Terraform"
 date:       2017-12-09
 authors:     [niek]
-header-img: "assets/2017-12-09_runners-on-the-spot/img/blob_glow.jpg"
+cover: "./blob_glow.jpg"
 tags:       [gitlab, docker, aws, terraform]
 enable_asciinema: 1
 ---
@@ -17,7 +17,7 @@ enable_asciinema: 1
 The GitLab blog article nicely explains how to create your infrastructure in a manual way. However, we rather automate all things. Thus, we will automate the set up described in the blog article. In this post I will discuss how to create the infrastructure needed to run the build on AWS spot instances with [Hashicorp Terraform](https://www.terraform.io/). The GitLab Runner module discussed in the post is available in the [Terraform Registery](https://registry.terraform.io/modules/npalm/gitlab-runner/aws/0.1.0).
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/img/gitlab-runner.png" alt="GitLab Runner">
+    <img src="./gitlab-runner.png" alt="GitLab Runner">
 </a>
 
 ## Prerequisites
@@ -28,7 +28,7 @@ Open you GitLab project and lookup the token to register a runner. Be aware that
 docker run -it --rm gitlab/gitlab-runner register
 ```
 
-<asciinema-player src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/asciinema/register.json"
+<asciinema-player src="assets/2017-12-09_runners-on-the-spot/asciinema/register.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
@@ -36,7 +36,7 @@ docker run -it --rm gitlab/gitlab-runner register
 Provide the requested details and consult the GitLab manual for more details. Once done, you should see a new runner registered at your project or globally. Open the runner settings in edit mode and record the token. This token is needed later for connecting the agent.
 
 ## Creating infrastructure for the runners
-Now the runner is configured in GitLab, we can start creating the infrastructure on AWS. For setting up the network layers, we use [Amazon networking scenario 2](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html) to build a VPC with a public and private subnets. For more details see this [post]({{ site.baseurl }}/2017/06/18/terraform-aws-vpc/) about creating a VPC in terraform. You can also simply use the [official terraform module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/1.7.0).
+Now the runner is configured in GitLab, we can start creating the infrastructure on AWS. For setting up the network layers, we use [Amazon networking scenario 2](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html) to build a VPC with a public and private subnets. For more details see this [post](2017/06/18/terraform-aws-vpc/) about creating a VPC in terraform. You can also simply use the [official terraform module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/1.7.0).
 
 
 ```
@@ -144,26 +144,26 @@ terraform init
 terraform apply
 ```
 
-<asciinema-player src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/asciinema/terraform.json"
+<asciinema-player src="assets/2017-12-09_runners-on-the-spot/asciinema/terraform.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
 
 After a few minutes the runner should be running and you should see it in your AWS console.
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/img/ec2.png" alt="Running EC2 instances">
+    <img src="./ec2.png" alt="Running EC2 instances">
 </a>
 <br>
 The runner should be active as well in GitLab. Check the runner pages which should now indicate the latest moment of contact.
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/img/runner.png" alt="GitLab Runner details">
+    <img src="./runner.png" alt="GitLab Runner details">
 </a>
 <br>
 
 The modules also enable CloudWatch logging, all `systemd` logging is streamed. Go to CloudWatch to inspect the logging and you will see that the installation process was logged as well.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/img/cloudwatch.png" alt="CloudWatch logging">
+    <img src="./cloudwatch.png" alt="CloudWatch logging">
 </a>
 
 ## Verify
@@ -204,7 +204,7 @@ verify:
 Add the file above to the GitLab repository that has the created runner attached. Once you commit the file a build should triggered. The logging of the verification step should contain the ascii art image.
 
 <a href="#">
-    <img src="{{ site.baseurl }}/assets/2017-12-09_runners-on-the-spot/img/ghost.png" alt="Build log">
+    <img src="./ghost.png" alt="Build log">
 </a>
 
 ## Warning

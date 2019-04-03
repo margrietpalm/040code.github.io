@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "Microhack Brew your code"
-slug:       "microhack-brew-your-code"
+slug:       "2018/08/08/microhack-brew-your-code"
 subtitle:   "How to create a brew package"
 date:       2018-08-08
 authors:     [jeroen]
-header-img: "assets/2018-08-08-brew-some-code/vanmoll-brew.jpg"
+cover: "./vanmoll-brew.jpg"
 tags:       [microhack, mac, brew]
 ---
 
@@ -122,11 +122,11 @@ This will show you what you still need to do, before you can submit it to homebr
 ## Improvements
 
 There are more improvements I should make to release it to homebrew. F.e. add dependencies to `git`.
-For now I'm not going to dive into that. Homebrew has good documentation on that: https://docs.brew.sh/Formula-Cookbook 
+For now I'm not going to dive into that. Homebrew has good documentation on that: https://docs.brew.sh/Formula-Cookbook
 
 ## Conclusion
 
-I really liked the way homebrew is set up. I like the way they name things, like `brew`, `tap` and `bottle`. By adding my own `bottle` I've learned how homebrew is working and now I even feel more confident in using it. I like the fact that only bottles with tests and with the proper dependencies check can be added in the core homebrew formulas. 
+I really liked the way homebrew is set up. I like the way they name things, like `brew`, `tap` and `bottle`. By adding my own `bottle` I've learned how homebrew is working and now I even feel more confident in using it. I like the fact that only bottles with tests and with the proper dependencies check can be added in the core homebrew formulas.
 
 ### Homebrew cask
 Homebrew has another great feature, called [homebrew cask](https://github.com/Homebrew/homebrew-cask). No more: "To install, drag this icon..". Now you can install tools like `atom` or `1password` by simply calling: `brew cask install atom`...
@@ -135,7 +135,3 @@ Homebrew has another great feature, called [homebrew cask](https://github.com/Ho
 - [https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap](https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap)
 - [https://docs.brew.sh/Formula-Cookbook](https://docs.brew.sh/Formula-Cookbook)
 - [https://github.com/Homebrew/homebrew-cask](https://github.com/Homebrew/homebrew-cask)
-
-
-
-

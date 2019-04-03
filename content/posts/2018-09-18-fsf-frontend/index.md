@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      "Full Stack Fest 2018"
-slug:       "full-stack-fest-2018-frontend"
+slug:       "2018/09/18/full-stack-fest-2018-frontend"
 subtitle:   "Frontend days"
 date:       2018-09-18
 authors:    [jeroen, niek]
-header-img: "assets/2018-09_fullstackfest/building.jpg"
+cover: "./building.jpg"
 tags:       [fullstack]
 comments:   true
 ---
@@ -75,9 +75,9 @@ Andrew Louis [@hyfen](https://twitter.com/hyfen), Imagine you can manage all you
 ### Everything in sketchnotes..
 A big shoutout to Christin Westermann ([@_c16n_](https://twitter.com/_c16n_)) for creating these sketchnotes!
 
-<img src="{{ site.baseurl }}/assets/2018-09_fullstackfest/fullstackfest-2018-05.jpg"  alt="fullstackfest-2018-05" width="100%">
+<img src="./fullstackfest-2018-05.jpg"  alt="fullstackfest-2018-05" width="100%">
 
-<img src="{{ site.baseurl }}/assets/2018-09_fullstackfest/fullstackfest-2018-06.jpg" alt="fullstackfest-2018-06" width="100%">
+<img src="./fullstackfest-2018-06.jpg" alt="fullstackfest-2018-06" width="100%">
 
 ## Day 2
 
