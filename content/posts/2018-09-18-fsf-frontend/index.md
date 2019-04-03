@@ -5,7 +5,9 @@ slug:       "2018/09/18/full-stack-fest-2018-frontend"
 subtitle:   "Frontend days"
 date:       2018-09-18
 authors:    [jeroen, niek]
-cover: "./building.jpg"
+cover:      "./building.jpg"
+imageFb:    "./2018-09-18-full-stack-fest-2018-frontend-fb.png"
+imageTw:    "./2018-09-18-full-stack-fest-2018-frontend-tw.png"
 tags:       [fullstack]
 comments:   true
 ---

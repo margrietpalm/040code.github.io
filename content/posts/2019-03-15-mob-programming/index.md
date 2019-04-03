@@ -5,7 +5,9 @@ slug:       "2019/03/15/mob-programming"
 subtitle:   "Learnings of a workshop"
 date:       2019-03-15
 authors:    [stefan]
-cover: "./background.jpeg"
+cover:      "./background.jpeg"
+imageFb:    "./2019-03-15-mob-programming-fb.png"
+imageTw:    "./2019-03-15-mob-programming-tw.png"
 tags:       ["xp"]
 enable_asciinema: 1
 ---

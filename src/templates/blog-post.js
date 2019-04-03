@@ -59,10 +59,12 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        subtitle
+        date(formatString: "YYYY-MM-DD")
         slug
         language
         tags
+        authors
         cover {
           publicURL
         }

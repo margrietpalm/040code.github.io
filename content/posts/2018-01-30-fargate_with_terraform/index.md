@@ -6,6 +6,8 @@ subtitle:   "Running serverless containers with Terraform"
 date:       2018-01-30
 authors:     [niek]
 cover: "./strijps-containers.jpg"
+imageTw:    "./2018-01-30-microhack-fargate-tw.png"
+imageFb:    "./2018-01-30-microhack-fargate-fb.png"
 tags:       [aws, terraform, docker, microhack]
 enable_asciinema: 1
 ---

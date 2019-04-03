@@ -6,6 +6,8 @@ subtitle:   "A quick test for using the Zappa.io serverless framework to run a p
 date:       2017-10-01
 authors:     [jeroen]
 cover: "./htc-lake.jpg"
+imageTw:    "./2017-10-01-microhack-zappa-io-tw.png"
+imageFb:    "./2017-10-01-microhack-zappa-io-fb.png"
 tags:       [serverless, microhack, python, aws, cloud]
 ---
 

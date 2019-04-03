@@ -6,6 +6,8 @@ subtitle:   "Experimenting with ClojureScript"
 date:       2017-07-12
 authors:     [maarten]
 cover: "./hendry_dunant_park.jpg"
+imageFb:    "./2017-07-12-visualizing-bezier-curves-part-2-fb.png"
+imageTw:    "./2017-07-12-visualizing-bezier-curves-part-2-tw.png"
 tags:       [clojure, clojurescript, bézier, functional, klipse, canvas]
 enable_klipsejs: 1
 ---

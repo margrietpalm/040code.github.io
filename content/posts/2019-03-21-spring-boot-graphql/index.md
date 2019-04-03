@@ -3,26 +3,17 @@ slug:       "2019/03/21/spring-boot-graphql"
 title:      "GraphQL + Spring Boot"
 subtitle:   "Queries, mutations and subscription in Java"
 date:       2019-03-21
-cover:     "./glow-lichttoren.jpg"
-imageTw:    "./glow-lichttoren.jpg"
-imageFb:    "./glow-lichttoren.jpg"
+cover:      ./glow-lichttoren.jpg
+imageTw:    ./2019-03-21-spring-boot-graphql-tw.png 
+imageFb:    ./2019-03-21-spring-boot-graphql-fb.png
 tags:
   - graphql
   - spring
   - java
+authors:
+  - niek
 
 ---
-title: "What's new in gatsby-starter-morning-dew v1.1?"
-slug: gatsby-starter-morning-dew-v1-1
-date: 2018-11-13
-language: en
-cover: ./cover-balloons.jpg
-imageTw: ./gatsby-starter-morning-dew-v1-1-tw.png
-imageFb: ./gatsby-starter-morning-dew-v1-1-fb.png
-tags:
-  - gatsby
----
- -->
 
 ### Introduction
 Now GraphQL is not anymore that new kid on a block it would be nice if we can implement a service with a GraphQL interface. Spring Boot is one of the well known frameworks to build your micro services in Java. Time to assess how easy, or hard it will be to implement a GraphQL service. In this post we will not explain how [GraphQL](https://graphql.org/) works. We focus on a simple Java Spring Boot micro services with a JPA layer. In the GraphQL language we cover the tree major concepts, a query, a mutation and a subscription.

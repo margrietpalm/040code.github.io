@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const BlogPostShareImage = resolve('./src/templates/blog-post-share-image.js')
   const PageTemplate = resolve('./src/templates/page.js')
   const PostsBytagTemplate = resolve('./src/templates/tags.js')
+  const PostsByAuthorTemplate = resolve('./src/templates/authors.js')
   const ListPostsTemplate = resolve('./src/templates/blog-list-template.js')
 
   const allMarkdown = await graphql(
@@ -22,6 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug
                 type
                 tags
+                authors
               }
             }
           }
@@ -122,6 +124,20 @@ exports.createPages = async ({ graphql, actions }) => {
         component: PostsBytagTemplate,
         context: {
           tag: uniqTag
+        },
+      })
+    })
+  
+  // generate authors
+  markdownFiles
+    .filter(item => item.node.frontmatter.authors !== null)
+    .reduce((acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.authors])], [])
+    .forEach(uniqAuthor => {
+      createPage({
+        path: `authors/${uniqAuthor}`,
+        component: PostsByAuthorTemplate,
+        context: {
+          author: uniqAuthor
         },
       })
     })

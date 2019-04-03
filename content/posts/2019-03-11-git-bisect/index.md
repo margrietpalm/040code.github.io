@@ -4,6 +4,9 @@ slug:       "2019/03/13/git-bisect"
 subtitle:   "Find the bug-introducing commit with Git Bisect"
 date:       2019-03-13
 cover:      "./background.png"
+imageFb:    "./2019-03-13-git-bisect-fb.png"
+imageTw:    "./2019-03-13-git-bisect-tw.png"
+authors:    ["jeroen"]
 ---
 
 I want to tell you a little story about what happened to me a few days ago.

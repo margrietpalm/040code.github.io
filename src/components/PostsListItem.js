@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Flag from './Flag/Flag'
 import TagList from './TagList'
+import AuthorList from './AuthorList'
 import siteConfig from '../../data/siteConfig'
 import styled from 'styled-components'
 
@@ -49,10 +50,13 @@ const PostTitleLink = styled(Link)`
     border-bottom: 1px dotted rgba(34, 34, 34, 0.8);
   }
 `
+const PostSubTitle = styled.p`
+  padding: 1em 0;
+`
 
 class PostsListItem extends React.Component {
   render() {
-    const { title, excerpt, slug, date, language, tags } = this.props
+    const { title, subtitle, slug, date, language, tags, authors } = this.props
 
     return (
       <Post>
@@ -65,11 +69,12 @@ class PostsListItem extends React.Component {
           </h2>
         </PostHeader>
         <section>
-          <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
+          <PostSubTitle>{subtitle}</PostSubTitle>
         </section>
         <footer>
           <TagList tags={tags} icon={true} />
           <PostDate>{date}</PostDate>
+          <AuthorList authors={authors} />
           <ReadPost to={slug}>Read post ›</ReadPost>
         </footer>
       </Post>

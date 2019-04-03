@@ -53,11 +53,13 @@ export const pageQuery = graphql`
         node {
           excerpt
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "YYYY-MM-DD")
             title
+            subtitle
             tags
             language
             slug
+            authors
           }
         }
       }

@@ -55,7 +55,8 @@ const main = async () => {
 
   for (let i = 0; i < files.length; i++) {
     const file = files[i]
-    const destPrefix = join(file.directory, `${file.slug}-`)
+    const dashedSlug = file.slug.replace(/\//g,'-')
+    const destPrefix = join(file.directory, `${dashedSlug}-`)
     const fbFile = `${destPrefix}fb.png`
     const twFile = `${destPrefix}tw.png`
 

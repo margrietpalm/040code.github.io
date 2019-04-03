@@ -6,6 +6,8 @@ subtitle:   "Auto scaling GitLab runners on AWS with Terraform"
 date:       2017-12-09
 authors:     [niek]
 cover: "./blob_glow.jpg"
+imageTw:    "./2017-12-09-runners-on-the-spot-tw.png"
+imageFb:    "./2017-12-09-runners-on-the-spot-fb.png"
 tags:       [gitlab, docker, aws, terraform]
 enable_asciinema: 1
 ---

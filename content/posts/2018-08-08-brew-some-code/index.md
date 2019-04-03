@@ -4,8 +4,10 @@ title:      "Microhack Brew your code"
 slug:       "2018/08/08/microhack-brew-your-code"
 subtitle:   "How to create a brew package"
 date:       2018-08-08
-authors:     [jeroen]
-cover: "./vanmoll-brew.jpg"
+authors:    [jeroen]
+cover:      "./vanmoll-brew.jpg"
+imageFb:    "./2018-08-08-microhack-brew-your-code-fb.png"
+imageTw:    "./2018-08-08-microhack-brew-your-code-tw.png"
 tags:       [microhack, mac, brew]
 ---
 

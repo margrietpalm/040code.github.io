@@ -73,6 +73,7 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
+        subtitle
         cover {
           publicURL
         }
