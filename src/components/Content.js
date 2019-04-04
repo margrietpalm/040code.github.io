@@ -54,7 +54,7 @@ const ContentBody = styled.div`
     overflow: auto;
     tab-size: 1.5em;
     margin: 1.5em 0em 1.5em 0;
-    /* padding: 1em; */
+    font-size: 0.7em;
   }
 
   & .gatsby-highlight > pre {
@@ -92,7 +92,7 @@ const ContentBody = styled.div`
     & td {
       padding: 0.5em;
       background: #e8e8e8;
-      border-bottom: 2px solid white; 
+      border-bottom: 2px solid white;
     }
   }
 `

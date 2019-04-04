@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
 
         <Hero
           heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL}
-          title={post.frontmatter.title}
+          title={post.frontmatter.title} subtitle={post.frontmatter.subtitle}
         />
 
         <Wrapper>
@@ -41,7 +41,7 @@ class BlogPostTemplate extends React.Component {
         </Wrapper>
 
         <Wrapper>
-          <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
+          <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} comments={post.frontmatter.comments}/>
           <PrevNextPost previous={previous} next={next} />
         </Wrapper>
       </Layout>
@@ -65,6 +65,7 @@ export const pageQuery = graphql`
         language
         tags
         authors
+        comments
         cover {
           publicURL
         }

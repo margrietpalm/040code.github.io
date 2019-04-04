@@ -12,13 +12,14 @@ import SEO from '../components/SEO'
 class BlogList extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteDescription = get(this, 'props.data.site.siteMetadata.description')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const { pageContext } = this.props
 
     return (
       <Layout location={this.props.location}>
         <SEO />
-        <Hero title={siteTitle} />
+        <Hero title={siteTitle} subtitle={siteDescription} />
 
         <Wrapper>
           <PostsList posts={posts} />
