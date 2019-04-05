@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: '040code',
-  siteDescription: "040 Code - A developers blog",
+  siteDescription: "A developers blog",
   authorName: '040 code',
   twitterUsername: 'niekos77',
   authorAvatar: '',
@@ -16,8 +16,8 @@ module.exports = {
   theme_color: '#222222',
   display: 'standalone',
   icon: 'src/assets/gatsby-icon.png',
-  postsPerPage: 6,
-  disqusShortname: 'maxpou',
+  postsPerPage: 7,
+  disqusShortname: '040code',
   headerLinks: [
     {
       label: '🏡',
@@ -31,49 +31,9 @@ module.exports = {
       label: 'About',
       url: '/gatsby-starter-morning-dew',
     },
-    {
-      label: 'Installation',
-      url: '/how-to-install',
-    },
   ],
   // Footer information (ex: Github, Netlify...)
-  websiteHost: {
-    name: 'GitHub',
-    url: 'https://github.com',
-  },
   footerLinks: [
-    [
-      'Explore',
-      {
-        label: 'Blog',
-        url: '/',
-      },
-      {
-        label: 'About',
-        url: '/',
-      },
-      {
-        label: 'Installation',
-        url: '/how-to-install',
-      },
-    ],
-    [
-      'Follow the author',
-      {
-        label: 'Github',
-        url: 'https://github.com/040code',
-        iconClassName: 'fa fa-github',
-      },
-      {
-        label: 'Website',
-        url: 'https://040code.github.io',
-        iconClassName: 'fa fa-globe',
-      },
-      {
-        label: 'Twitter',
-        url: 'https://twitter.com/niekos77',
-        iconClassName: 'fa fa-twitter',
-      },
-    ],
+  
   ],
 }

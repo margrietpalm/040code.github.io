@@ -9,6 +9,7 @@ class DisqusWrapper extends React.Component {
     if (!disqusShortname) {
       return null
     }
+
     const disqusSiteUrl = siteConfig.disqusSiteUrl
     const disqusConfig = {
       url: `${disqusSiteUrl}${this.props.slug}`,

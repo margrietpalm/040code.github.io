@@ -10,14 +10,24 @@ const ListContainer = styled.div`
 
 const TagListItem = styled(Link)`
   margin-left: 0.3rem;
-  color: #787676;
+
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
 
   &:hover {
     border-bottom: 1px dotted #787676;
   }
-  &:before {
-    content: '#';
-  }
+
 `
 
 class TagList extends React.Component {
@@ -30,8 +40,8 @@ class TagList extends React.Component {
         {tags.map((tag, i) => {
           return (
             <Fragment key={`tag-list-${i}`}>
-              <TagListItem to={`tags/${tag}`}>{tag}</TagListItem>
-              {i < tags.length - 1 ? ', ' : ''}
+              <TagListItem class="w3-round-size" to={`tags/${tag}`}>{tag}</TagListItem>
+              {i < tags.length - 1 ? ' ' : ''}
             </Fragment>
           )
         })}
