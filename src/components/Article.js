@@ -26,7 +26,6 @@ class Article extends React.Component {
       <ArticleWrapper>
         <Content
           content={post.html}
-          date={post.frontmatter.date}
           tags={post.frontmatter.tags}
         />
         <ArticleFooter>

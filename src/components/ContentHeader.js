@@ -16,7 +16,6 @@ class ContentIntro extends React.Component {
         {date && <time>{date}</time>}
         {Array.isArray(tags) && tags.length > 0 && (
           <Fragment>
-            <span> in</span>
             <TagList tags={tags} />
           </Fragment>
         )}

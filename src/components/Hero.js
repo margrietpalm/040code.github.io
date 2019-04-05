@@ -1,5 +1,5 @@
-import React from 'react'
-import { withPrefix } from 'gatsby'
+import React, { Fragment } from 'react'
+import { withPrefix, Link } from 'gatsby'
 import siteConfig from '../../data/siteConfig'
 import styled from 'styled-components'
 
@@ -31,13 +31,33 @@ const HeroTitle = styled.h1`
 `
 
 const HeroSubtitle = styled.h2`
-  font-weight: 700;
   font-size: 1.7rem;
   margin: 10px 60px;
   color: #fff;
   text-shadow: 2px 2px #222222;
-  font-weight: 600;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+`
+
+const DateAndAuthor = styled.span`
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 2px 2px #222222;
+`
+
+const AuthorLink = styled(Link)`
+  margin-left: 0.3rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 2px 2px #222222;
+
+  &:hover {
+    border-bottom: 1px dotted #787676;
+  }
+  &:before {
+    content: '@';
+  }
 `
 
 class Hero extends React.Component {
@@ -45,12 +65,26 @@ class Hero extends React.Component {
     const heroImg = this.props.heroImg || withPrefix(siteConfig.siteCover)
     const { title } = this.props
     const { subtitle } = this.props
+    const { date } = this.props
+    const { authors } = this.props
 
     return (
       <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
         <TitleContainer>
           <HeroTitle>{title}</HeroTitle>
           <HeroSubtitle>{subtitle}</HeroSubtitle>
+          {(authors) && (authors.length != 0) &&
+            <DateAndAuthor>
+            by: {authors && authors.map((author, i) => {
+              return (
+                <Fragment key={`author-list-${i}`}>
+                  <AuthorLink to={`authors/${author}`}>{author}</AuthorLink>
+                  {i < authors.length - 1 ? ' ' : ''}
+                </Fragment>
+              )
+            })}
+             &nbsp; on {date}</DateAndAuthor>
+          }
         </TitleContainer>
       </HeroContainer>
     )

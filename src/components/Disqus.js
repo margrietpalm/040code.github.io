@@ -6,7 +6,7 @@ import siteConfig from '../../data/siteConfig'
 class DisqusWrapper extends React.Component {
   render() {
     const disqusShortname = siteConfig.disqusShortname
-    if (!disqusShortname || !this.props.comments) {
+    if (!disqusShortname) {
       return null
     }
 

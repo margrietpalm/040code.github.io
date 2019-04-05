@@ -5,10 +5,18 @@ import ContentHeader from './ContentHeader'
 const ContentBody = styled.div`
   line-height: 1.6;
 
+  & > h2:first-of-type {
+     padding-top: 0;
+  }
+
   & > h2 {
     padding-top: 3rem;
     margin-top: 3rem;
     border-top: 1px solid #ececec;
+  }
+
+  & > h3:first-of-type {
+     padding-top: 0;
   }
 
   & > h3 {
@@ -103,7 +111,7 @@ class Content extends React.Component {
 
     return (
       <section>
-        {(tags || date) && <ContentHeader date={date} tags={tags} />}
+        {(tags) && <ContentHeader tags={tags} />}
         <ContentBody dangerouslySetInnerHTML={{ __html: content }} />
       </section>
     )
