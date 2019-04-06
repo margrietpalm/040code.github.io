@@ -6,6 +6,8 @@ subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2018-02-14
 authors:    [niek]
 cover:      "./holstlaan-dommel.jpg"
+coverLink:  "https://goo.gl/maps/NSJUxqvPzc32"
+coverDescription: "Dommel / Professor Holstlaan"
 imageTw:    "./2018-02-14-service-discovery-on-aws-tw.png"
 imageFb:    "./2018-02-14-service-discovery-on-aws-fb.png"
 tags:       [aws, spring, docker]

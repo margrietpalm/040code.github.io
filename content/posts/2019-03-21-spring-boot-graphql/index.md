@@ -4,6 +4,8 @@ title:      "GraphQL + Spring Boot"
 subtitle:   "Queries, mutations and subscription in Java"
 date:       2019-03-21
 cover:      ./glow-lichttoren.jpg
+coverDescription: "Glow 2018 - Lichttoren"
+coverLink:  "https://goo.gl/maps/CjRDKs3VRKv"
 imageTw:    ./2019-03-21-spring-boot-graphql-tw.png
 imageFb:    ./2019-03-21-spring-boot-graphql-fb.png
 tags:
