@@ -6,6 +6,8 @@ subtitle:   "Frontend days"
 date:       2018-09-18
 authors:    [jeroen, niek]
 cover:      "./building.jpg"
+coverLink:  "https://goo.gl/maps/jSKonnGYR1u"
+coverDescription: "Frits Philipslaan"
 imageFb:    "./2018-09-18-full-stack-fest-2018-frontend-fb.png"
 imageTw:    "./2018-09-18-full-stack-fest-2018-frontend-tw.png"
 tags:       [fullstack]
