@@ -36,6 +36,8 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title} subtitle={post.frontmatter.subtitle}
           date={post.frontmatter.date}
           authors={post.frontmatter.authors}
+          coverLink={post.frontmatter.coverLink}
+          coverDescription={post.frontmatter.coverDescription}
         />
 
         <Wrapper>
@@ -73,6 +75,8 @@ export const pageQuery = graphql`
         cover {
           publicURL
         }
+        coverLink
+        coverDescription
         imageTw {
           publicURL
         }

@@ -21,6 +21,13 @@ const TitleContainer = styled.div`
   width: 100%;
 `
 
+const LocationContainer = styled.div`
+  display: table-footer-group;
+  vertical-align: center;
+  text-align: right;
+  width: 100%;
+`
+
 const HeroTitle = styled.h1`
   font-size: 3.5rem;
   margin: 10px 60px;
@@ -60,6 +67,29 @@ const AuthorLink = styled(Link)`
   }
 `
 
+const LocationLink = styled.a`
+  margin-right: 0.7rem;
+  font-size: 0.9rem;
+  color: #fff;
+  text-shadow: 2px 2px #222222;
+  font-size: 1rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+
+  &:hover {
+    border-bottom: 1px dotted #787676;
+  }
+
+`
+
+const LocationMarker = styled.span`
+  margin-right: 0.4rem;
+  font-size: 0.75rem;
+  color: #fff;
+  text-shadow: 2px 2px #222222;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+`
+
 class Hero extends React.Component {
   render() {
     const heroImg = this.props.heroImg || withPrefix(siteConfig.siteCover)
@@ -67,9 +97,12 @@ class Hero extends React.Component {
     const { subtitle } = this.props
     const { date } = this.props
     const { authors } = this.props
+    const { coverDescription } = this.props
+    const { coverLink } = this.props
 
     return (
       <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
+
         <TitleContainer>
           <HeroTitle>{title}</HeroTitle>
           <HeroSubtitle>{subtitle}</HeroSubtitle>
@@ -86,6 +119,12 @@ class Hero extends React.Component {
              &nbsp; on {date}</DateAndAuthor>
           }
         </TitleContainer>
+        { (coverDescription) && (coverLink) &&
+        <LocationContainer>
+          <LocationMarker><span class="fa fa-map-marker-alt"></span></LocationMarker>
+          <LocationLink href={coverLink} target="_blank">{coverDescription}</LocationLink>
+        </LocationContainer>
+        }
       </HeroContainer>
     )
   }
