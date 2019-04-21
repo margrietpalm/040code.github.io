@@ -11,7 +11,7 @@ coverDescription: "Blob"
 imageTw:    "./2017-12-09-runners-on-the-spot-tw.png"
 imageFb:    "./2017-12-09-runners-on-the-spot-fb.png"
 tags:       [gitlab, docker, aws, terraform]
-enable_asciinema: 1
+asciinema:  true
 ---
 
 ## Introduction
@@ -32,7 +32,7 @@ Open you GitLab project and lookup the token to register a runner. Be aware that
 docker run -it --rm gitlab/gitlab-runner register
 ```
 
-<asciinema-player src="assets/2017-12-09_runners-on-the-spot/asciinema/register.json"
+<asciinema-player src="/2017/12/09/runners-on-the-spot/register.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
@@ -148,7 +148,7 @@ terraform init
 terraform apply
 ```
 
-<asciinema-player src="assets/2017-12-09_runners-on-the-spot/asciinema/terraform.json"
+<asciinema-player src="/2017/12/09/runners-on-the-spot/terraform.json"
   cols="166" rows="15" autoplay="true" loop="true" speed="1.5">
 </asciinema-player>
 
