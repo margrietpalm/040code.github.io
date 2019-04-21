@@ -9,6 +9,7 @@ import styled from 'styled-components'
 const Post = styled.article`
   border-bottom: 1px solid rgba(214, 209, 230, 0.5);
   padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
 `
 
 const ReadPost = styled(Link)`
@@ -37,7 +38,7 @@ const PostDate = styled.time`
 `
 
 const PostHeader = styled.header`
-  padding: 1em 0;
+  padding: 0em 0;
 `
 
 const Excerpt = styled.p`
@@ -46,12 +47,18 @@ const Excerpt = styled.p`
 `
 
 const PostTitleLink = styled(Link)`
+  font-size: 1.6rem;  
+  font-weight: bold;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   &:hover {
     border-bottom: 1px dotted rgba(34, 34, 34, 0.8);
   }
 `
 const PostSubTitle = styled.p`
-  padding: 1em 0;
+  padding: 0.8rem 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;  
 `
 
 class PostsListItem extends React.Component {
@@ -75,10 +82,11 @@ class PostsListItem extends React.Component {
           <TagList tags={tags} icon={true} />
           <PostDate>{date}</PostDate>
           <AuthorList authors={authors} />
-          <ReadPost to={slug}>Read post ›</ReadPost>
+          {/* <ReadPost to={slug}>Read post ›</ReadPost> */}
         </footer>
       </Post>
     )
   }
 }
 export default PostsListItem
+
