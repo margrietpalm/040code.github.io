@@ -36,7 +36,7 @@ class TagList extends React.Component {
 
     return (
       <ListContainer>
-        {icon === true && <Fragment>🏷 </Fragment>}
+        {icon === true}
         {tags.map((tag, i) => {
           return (
             <Fragment key={`tag-list-${i}`}>
