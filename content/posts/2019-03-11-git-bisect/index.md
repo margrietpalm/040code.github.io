@@ -1,12 +1,13 @@
 ---
 title:      "Git Bisect"
-slug:       "2019/03/13/git-bisect"
+slug:       "/2019/03/13/git-bisect"
 subtitle:   "Find the bug-introducing commit with Git Bisect"
 date:       2019-03-13
 cover:      "./background.png"
 imageFb:    "./2019-03-13-git-bisect-fb.png"
 imageTw:    "./2019-03-13-git-bisect-tw.png"
 authors:    ["jeroen"]
+asciinema:  true
 ---
 
 I want to tell you a little story about what happened to me a few days ago.
@@ -67,12 +68,12 @@ cargo test --test bug
 ```
 
 Test on `master` should fail:
-<asciinema-player src="assets/2019-03-11-git-bisect/git-bisect-1.json"
+<asciinema-player src="/2019/03/13/git-bisect/git-bisect-1.json"
   cols="166" rows="18">
 </asciinema-player>
 
 Test on first commit (`030b725`) should not fail:
-<asciinema-player src="assets/2019-03-11-git-bisect/git-bisect-2.json"
+<asciinema-player src="/2019/03/13/git-bisect/git-bisect-2.json"
   cols="166" rows="18">
 </asciinema-player>
 
@@ -108,7 +109,7 @@ git bisect reset
 ```
 
 Let's see this in action:
-<asciinema-player src="assets/2019-03-11-git-bisect/git-bisect-3.json"
+<asciinema-player src="/2019/03/13/git-bisect/git-bisect-3.json"
   cols="166" rows="18">
 </asciinema-player>
 
@@ -217,7 +218,7 @@ Commit which introduced the bug:
 </a>
 
 <a href="#">
-    <img src="assets/2019-03-11-git-bisect/git-bisect-gitx.png" alt="gitx">
+    <img src="/2019/03/13/git-bisect/git-bisect-gitx.png" alt="gitx">
 </a>
 
 ## Results

@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
@@ -16,6 +17,15 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
+        
+          { (post.frontmatter.asciinema) &&
+            <Helmet>
+            <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
+            <script src="/asciinema-player.js"></script>
+            </Helmet>
+          }
+   
+
         <SEO
           title={post.frontmatter.title}
           description={post.excerpt}
@@ -83,6 +93,7 @@ export const pageQuery = graphql`
         imageFb {
           publicURL
         }
+        asciinema
       }
     }
   }

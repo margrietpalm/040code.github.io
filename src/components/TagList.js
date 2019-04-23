@@ -40,7 +40,7 @@ class TagList extends React.Component {
         {tags.map((tag, i) => {
           return (
             <Fragment key={`tag-list-${i}`}>
-              <TagListItem class="w3-round-size" to={`tags/${tag}`}>{tag}</TagListItem>
+              <TagListItem className="w3-round-size" to={`tags/${tag}`}>{tag}</TagListItem>
               {i < tags.length - 1 ? ' ' : ''}
             </Fragment>
           )
