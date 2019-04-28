@@ -9,6 +9,7 @@ cover:      "./vanmoll-brew.jpg"
 imageFb:    "./2018-08-08-microhack-brew-your-code-fb.png"
 imageTw:    "./2018-08-08-microhack-brew-your-code-tw.png"
 tags:       [microhack, mac, brew]
+type:        post
 ---
 
 Working on a Mac made my work a lot more fun. Especially when I was introduced to [homebrew](https://brew.sh/), the missing package manager for macOS.

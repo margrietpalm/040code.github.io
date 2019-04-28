@@ -107,7 +107,7 @@ const ContentBody = styled.div`
 
 class Content extends React.Component {
   render() {
-    const { content, date, tags } = this.props
+    const { content, tags } = this.props
 
     return (
       <section>

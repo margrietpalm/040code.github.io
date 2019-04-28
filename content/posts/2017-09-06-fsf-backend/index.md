@@ -9,6 +9,7 @@ cover: "./daf.jpg"
 imageTw:    "./2017-09-05-full-stack-fest-2017-tw.png"
 imageFb:    "./2017-09-05-full-stack-fest-2017-fb.png"
 tags:       [iot, cloud, fullstack, microservices, security]
+type:        post
 ---
 
 # Full Stack Fest 2017

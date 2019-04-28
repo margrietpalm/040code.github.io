@@ -9,6 +9,7 @@ cover: "./irisbuurt.jpg"
 imageTw:    "./2017-10-19-graphql-geecon-tw.png"
 imageFb:    "./2017-10-19-graphql-geecon-fb.png"
 tags:       [graphql]
+type:        post
 ---
 
 A short post to share the slides and examples I used in my talk at the [GeeCON](https://2017.geecon.cz) conference on October the 19th in Prague.

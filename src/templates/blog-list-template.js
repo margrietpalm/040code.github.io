@@ -46,7 +46,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { type: { ne: "page" } } }
+      filter: { frontmatter: { type: { eq: "post" } } }
       limit: $limit
       skip: $skip
     ) {

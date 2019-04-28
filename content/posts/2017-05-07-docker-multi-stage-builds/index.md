@@ -9,6 +9,7 @@ cover: "./containers-strijp-s.png"
 imageTw: "./2017-05-07-docker-multi-stage-builds-tw.png"
 imageFb: "./2017-05-07-docker-multi-stage-builds-fb.png"
 tags:       [docker]
+type:        post
 ---
 
 # The problem

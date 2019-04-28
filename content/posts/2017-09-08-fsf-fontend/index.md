@@ -9,6 +9,7 @@ cover: "./graffiti-hooftlaan.jpg"
 imageFb:    "./2017-09-08-full-stack-fest-2017-frontend-fb.png"
 imageTw:    "./2017-09-08-full-stack-fest-2017-frontend-tw.png"
 tags:       [fullstack, aframe, serviceworkers, css, javascript, ast, svg, blockchain, react]
+type:        post
 ---
 
 # Full Stack Fest 2017

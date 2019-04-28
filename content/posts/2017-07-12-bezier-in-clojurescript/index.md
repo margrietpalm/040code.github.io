@@ -10,6 +10,7 @@ imageFb:    "./2017-07-12-visualizing-bezier-curves-part-2-fb.png"
 imageTw:    "./2017-07-12-visualizing-bezier-curves-part-2-tw.png"
 tags:       [clojure, clojurescript, bézier, functional, klipse, canvas]
 enable_klipsejs: 1
+type:        post
 ---
 
 In my [previous post](https://040code.github.io/2017/07/01/bezier-in-clojure/) I described how to visualise simple Bézier curves. I chose `Clojure` as implementation language. Unfortunately I had to ask you to jump through a couple of hoops in order to code along: installing leiningen, installing and configuring the lein-try plugin and maybe even installing the JVM.

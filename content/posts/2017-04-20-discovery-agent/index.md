@@ -9,6 +9,7 @@ cover: "./silly-walk-this-way-dommeltunnel.png"
 imageTw: "./2019-04-20-discovery-agent-tw.png"
 imageFb: "./2019-04-20-discovery-agent-fb.png"
 tags: [docker, aws, spring]
+type:        post
 ---
 
 *Update 2018-02-14, since Amazon has introduced a feature to extract meta data at runtime in a container the discovery agent described in this post becomes obsolete for the ECS case, see more [this](/2018/02/14/service-discovery) post for more details.*

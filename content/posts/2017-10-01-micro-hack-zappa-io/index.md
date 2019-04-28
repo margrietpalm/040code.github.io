@@ -9,6 +9,7 @@ cover: "./htc-lake.jpg"
 imageTw:    "./2017-10-01-microhack-zappa-io-tw.png"
 imageFb:    "./2017-10-01-microhack-zappa-io-fb.png"
 tags:       [serverless, microhack, python, aws, cloud]
+type:        post
 ---
 
 # MicroHack - Python serverless with Zappa.io

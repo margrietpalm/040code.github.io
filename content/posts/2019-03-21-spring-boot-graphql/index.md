@@ -14,6 +14,7 @@ tags:
   - java
 authors:
   - niek
+type:        post
 
 ---
 

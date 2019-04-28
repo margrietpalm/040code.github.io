@@ -3,12 +3,11 @@ slug:       "2019/04/18/cloudrun"
 title:      "Cloud Run"
 subtitle:   "Bringing serverless to containers"
 date:       2019-04-18
-cover:      "./skybar-nh.jpg"
+cover:      ./skybar-nh.jpg
 coverDescription: "VANE Skybar"
-coverLink:  "https://goo.gl/maps/Y8UyKjQ2TtBT9Z5K8"
-imageTw:
-imageFb:
-asciinema: true
+coverLink:   "https://goo.gl/maps/Y8UyKjQ2TtBT9Z5K8"
+asciinema:   true
+type:        post
 tags: 
   - cloud
   - google

@@ -10,6 +10,7 @@ imageTw:         "./2018-08-22-maze-generation-tw.png"
 tags:            [clojure, functional]
 date:            "2018-08-22"
 published:       true
+type:        post
 ---
 
 ## Introduction

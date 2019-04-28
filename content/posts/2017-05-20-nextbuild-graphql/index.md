@@ -9,6 +9,7 @@ cover:      "./radioroyaal.png"
 imageTw:    "./2017-05-20-graphql-tw.png"
 imageFb:    "./2017-05-20-graphql-fb.png"
 tags:       [graphql]
+type:        post
 ---
 
 A short post to share the slides and examples I used in my talk at the [Nextbuild](http://nextbuild.nl/) conference on May the 20th in Eindhoven.

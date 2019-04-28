@@ -12,6 +12,7 @@ imageTw:    "./2017-12-09-runners-on-the-spot-tw.png"
 imageFb:    "./2017-12-09-runners-on-the-spot-fb.png"
 tags:       [gitlab, docker, aws, terraform]
 asciinema:  true
+type:        post
 ---
 
 ## Introduction

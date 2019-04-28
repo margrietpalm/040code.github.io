@@ -12,6 +12,7 @@ imageTw:    "./2018-01-30-microhack-fargate-tw.png"
 imageFb:    "./2018-01-30-microhack-fargate-fb.png"
 tags:       [aws, terraform, docker, microhack]
 asciinema:  true
+type:        post
 ---
 
 Last December at the AWS re:invent, AWS announced the new container service platform Fargate. Fargate is integrated to ECS. The key difference is that Fargate does not require you to have EC2 instances running to host your containers, which means we have serverless containers. A drawback is that Fargate is not globally available yet, today Fargate is only available in `us-east-1`, see also the [list](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) of supported regions. Later in December Fargate also become available in [Terraform](https://www.terraform.io/) so time to see how it works.

@@ -12,6 +12,7 @@ imageFb:    "./2018-09-05-full-stack-fest-2018-fb.png"
 imageTw:    "./2018-09-05-full-stack-fest-2018-tw.png"
 tags:       [iot, cloud, fullstack, microservices, security]
 comments:   true
+type:        post
 ---
 
 # Full Stack Fest 2018

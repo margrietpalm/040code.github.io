@@ -11,6 +11,7 @@ coverDescription: "Dommel / Professor Holstlaan"
 imageTw:    "./2018-02-14-service-discovery-on-aws-tw.png"
 imageFb:    "./2018-02-14-service-discovery-on-aws-fb.png"
 tags:       [aws, spring, docker]
+type:        post
 ---
 
 Last year I wrote a [post](/2017/04/20/discovery-agent/) how to implement service discovery for Spring Boot applications running in Docker containers on AWS ECS. At that time the Amazon ECS agent does not have support to discover the docker exposed ports inside the container. In November 2017 Amazon released a feature in the [ECS agent 1.15](https://github.com/aws/amazon-ecs-agent/releases/tag/v1.15.0) to retrieve container meta data in the container. This feature makes the discovery agent obsolete.

@@ -12,6 +12,7 @@ imageFb:    "./2018-09-18-full-stack-fest-2018-frontend-fb.png"
 imageTw:    "./2018-09-18-full-stack-fest-2018-frontend-tw.png"
 tags:       [fullstack]
 comments:   true
+type:        post
 ---
 
 # Full Stack Fest 2018

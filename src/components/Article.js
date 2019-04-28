@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Bio from './Bio'
 import Content from './Content'
 
 const ArticleWrapper = styled.article`
@@ -9,13 +8,6 @@ const ArticleWrapper = styled.article`
   @media only screen and (max-width: 500px) {
     padding: 0;
   }
-`
-
-const ArticleFooter = styled.footer`
-  position: relative;
-  margin: 6rem 0 0;
-  padding: 3rem 0 0;
-  border-top: 1px solid #ebf2f6;
 `
 
 class Article extends React.Component {
@@ -28,9 +20,6 @@ class Article extends React.Component {
           content={post.html}
           tags={post.frontmatter.tags}
         />
-        <ArticleFooter>
-          <Bio />
-        </ArticleFooter>
       </ArticleWrapper>
     )
   }

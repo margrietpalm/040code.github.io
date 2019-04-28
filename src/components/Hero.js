@@ -7,7 +7,7 @@ const HeroContainer = styled.div`
   position: relative;
   display: table;
   width: 100%;
-  height: 400px;
+  height: 340px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,7 +121,7 @@ class Hero extends React.Component {
         </TitleContainer>
         { (coverDescription) && (coverLink) &&
         <LocationContainer>
-          <LocationMarker><span class="fa fa-map-marker-alt"></span></LocationMarker>
+          <LocationMarker><span className="fa fa-map-marker-alt"></span></LocationMarker>
           <LocationLink href={coverLink} target="_blank">{coverDescription}</LocationLink>
         </LocationContainer>
         }

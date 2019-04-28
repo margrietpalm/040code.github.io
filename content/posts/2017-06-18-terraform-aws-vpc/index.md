@@ -10,6 +10,7 @@ imageTw:    "./2017-06-18-coding-a-vpc-in-terraform-tw.png"
 imageFb:    "./2017-06-18-coding-a-vpc-in-terraform-fb.png"
 tags:       [aws, terraform]
 comments:   false
+type:        post
 ---
 
 One of the common uses network setups in AWS is called [Scenario 2: VPC with Public and Private Subnets](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html). This is a that defines a Virtual Private Cloud (VPC), public subnets and private subnets. Setting up this infrastructure can be done via the AWS console or via cloud formation scripting. However, I prefer the tool [Terraform](https://www.terraform.io/) in which you can manage your infrastructure as code with a declarative language that supports building, changing and versioning your cloud in a modular way.

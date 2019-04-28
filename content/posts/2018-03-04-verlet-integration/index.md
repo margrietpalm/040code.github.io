@@ -10,6 +10,7 @@ imageTw:         "./2018-03-04-verlet-integration-tw.png"
 tags:            [clojure, functional]
 date:            "2018-03-04"
 published:       true
+type:        post
 ---
 
 ## Introduction

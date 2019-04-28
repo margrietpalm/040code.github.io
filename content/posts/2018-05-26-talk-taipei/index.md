@@ -11,6 +11,7 @@ coverDescription: "Leidingstraat, Strijp S"
 imageFb:    "./2018-05-26-immutable-infrastructure-taipei-fb.png"
 imageTw:    "./2018-05-26-immutable-infrastructure-taipei-tw.png"
 tags:       [terraform, aws, docker, microservices]
+type:        post
 ---
 
 The Docker slogan 'Build, Ship, and Run' advertises easy set up of immutable software builds, but it is not always that easy. Setting up immutable builds with Docker is pretty straight forward and shipping is just a matter of pushing the image to a repository. The next step is building the cloud infrastructure to run the containers. In the talk at

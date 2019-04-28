@@ -10,6 +10,7 @@ imageFb:    "./2019-03-15-mob-programming-fb.png"
 imageTw:    "./2019-03-15-mob-programming-tw.png"
 tags:       ["xp"]
 enable_asciinema: 1
+type:        post
 ---
 *This blog was originally posted on [Feb 25, 2019][1].*
 

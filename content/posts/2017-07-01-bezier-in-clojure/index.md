@@ -10,6 +10,7 @@ imageFb:    "./2017-07-01-visualising-bezier-curves-fb.png"
 imageTw:    "./2017-07-01-visualising-bezier-curves-tw.png"
 tags:       [clojure, bézier, functional, incanter]
 comments:   false
+type:        post
 ---
 
 For reasons I might explain in another post, I was reading about [Bézier curves on wikipedia](https://en.wikipedia.org/wiki/Bézier_curve) the other day. Especially the paragraph on "Constructing Bézier curves" made me understand intuitively how these curves are constructed. I wondered if `clojure` could help me easily visualise some of these curves so I fired up a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop) (Read-Eval-Print-Loop) to investigate.
