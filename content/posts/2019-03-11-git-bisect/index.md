@@ -218,12 +218,13 @@ Date:   Sun Aug 12 16:58:49 2018 +0200
 ```
 
 Commit which introduced the bug:
-<a href="https://github.com/JeroenKnoops/rust-example/commit/abc4c40d4a06711bab5039a2896db3f67d8ddd0e">
-  https://github.com/JeroenKnoops/rust-example/commit/abc4c40d4a06711bab5039a2896db3f67d8ddd0e
-</a>
 
+[https://github.com/JeroenKnoops/rust-example/commit/abc4c40d4a06711bab5039a2896db3f67d8ddd0e](https://github.com/JeroenKnoops/rust-example/commit/abc4c40d4a06711bab5039a2896db3f67d8ddd0e)
+
+Created Refs:
 <a href="#">
-    <img src="/2019/03/13/git-bisect/git-bisect-gitx.png" alt="gitx">
+    <img src="./git-bisect-gitx.png"
+    alt="gitx">
 </a>
 
 ## Results
