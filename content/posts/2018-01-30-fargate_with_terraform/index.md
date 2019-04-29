@@ -29,7 +29,7 @@ Before you start you need to have programmatically access to an AWS account and 
 Before we can create our containers, we have to create a few infrastructural components. For this example we create an own VPC including public and private subnets. An ECS cluster for our containers, and a CloudWatch log group for centralized logging. The diagram below shows an abstract view of the deployment we are going to create, this view contains two in instead of the 3 availability zones we use.
 
 <a href="#">
-    <img src="/2018/01/30/microhack-fargate/ecs-fargate-diagram.png" alt="Fargate">
+    <img src="./ecs-fargate-diagram.png" alt="Fargate">
 </a>
 
 We start with defining the VPC, we choose `us-east-1` since Fargate is only available in this region. In the blog post [Coding a VPC in Terraform](/2017/06/18/terraform-aws-vpc/) you find more details about how this VPC module is structured.
@@ -151,7 +151,7 @@ Time to verify the code is working by executing a `terraform apply`
 </asciinema-player>
 
 <a href="#">
-    <img src="/2018/01/30/microhack-fargate/container-definition.png" alt="Fargate">
+    <img src="./container-definition.png" alt="Fargate">
 </a>
 
 We have still nothing running but you can already see the different parts in de AWS console. We have now a VPC, CloudWatch log group, ECS cluster and task definition available. The next logical step in de AWS console would be to create the service, and find out at the latest step that you need to create a load balancer first. So in code we will define the load balancer first. The load balancer will route traffic via HTTP to the container.
@@ -283,7 +283,7 @@ That is the last part of coding, run `terraform apply` and inspect the result.
 That is all, we have now our blog running as serverless container in AWS Fargate.
 
 <a href="#">
-    <img src="/2018/01/30/microhack-fargate/ecs-fargate.png" alt="Fargate">
+    <img src="./ecs-fargate.png" alt="Fargate">
 </a>
 
 
@@ -391,5 +391,5 @@ That is all, all sample code is available at [GitHub](https://github.com/npalm/b
 In the output you will find the two endpoint links to the blogs. After a few minutes both links will be active. You can also see the service running on the Amazon console, simply navigate to the ECS console and select the cluster. You should see now one service on Fargate and the second one on EC2.
 
 <a href="#">
-    <img src="/2018/01/30/microhack-fargate/ecs-fargate-2.png" alt="Fargate">
+    <img src="./ecs-fargate-2.png" alt="Fargate">
 </a>
