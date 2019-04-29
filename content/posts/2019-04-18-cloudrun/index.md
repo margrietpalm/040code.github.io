@@ -7,6 +7,8 @@ cover:      ./skybar-nh.jpg
 coverDescription: "VANE Skybar"
 coverLink:   "https://goo.gl/maps/Y8UyKjQ2TtBT9Z5K8"
 asciinema:   true
+imageFb:    ./2019-04-18-cloudrun-fb.png
+imageTw:    ./2019-04-18-cloudrun-tw.png
 type:        post
 tags: 
   - cloud
