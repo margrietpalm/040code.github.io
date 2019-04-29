@@ -4,6 +4,8 @@ title:      "React Native Navigation and ClojureScript"
 subtitle:   "A beginner's guide to realizing proper navigation in a React Native application using ClojureScript and shadow-cljs"
 date:       2019-04-02
 cover:      ./background.jpg
+imageTw:    ./2019-04-02-react-native-navigation-and-clojurescript-tw.png
+imageFb:    ./2019-04-02-react-native-navigation-and-clojurescript-fb.png
 tags:
   - clojure
   - clojurescript
@@ -13,6 +15,7 @@ tags:
   - shadow-cljs
 authors:
   - stefan
+type:      post
 ---
 
 # React Native Navigation and ClojureScript
@@ -149,7 +152,7 @@ yarn react-native run-ios
 
 Tada!
 
-<img src="./Hi%20Shadow%21.png" height="50%" width="50%"  alt="Tada!" style="margin: 0 auto;" />
+<img src="./hi-shadow.png" height="50%" width="50%"  alt="Tada!" style="margin: 0 auto;" />
 
 ## Hot Reloading
 
