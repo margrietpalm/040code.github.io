@@ -13,5 +13,6 @@ deploy:
   local_dir: public
   keep-history: true
   name: "Travis Deploy"
+  target_branch: master
   on:
-    branch: master
+    branch: source
