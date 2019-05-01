@@ -63,7 +63,7 @@ coverDescription: "Frits Philipslaan"
 imageFb:    "./2019-03-13-git-bisect-fb.png"
 imageTw:    "./2019-03-13-git-bisect-tw.png"
 asciinema:  true
-type:        post
+type:       post
 tags:
   - 'git'
   - 'rust'
