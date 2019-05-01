@@ -6,7 +6,7 @@ const ContentBody = styled.div`
   line-height: 1.6;
 
   & > h2:first-of-type {
-     padding-top: 0;
+    padding-top: 0;
   }
 
   & > h2 {
@@ -16,7 +16,7 @@ const ContentBody = styled.div`
   }
 
   & > h3:first-of-type {
-     padding-top: 0;
+    padding-top: 0;
   }
 
   & > h3 {
@@ -77,8 +77,8 @@ const ContentBody = styled.div`
     margin-right: -1em;
     margin-left: -1em;
     padding-right: 1em;
-    padding-left: .75em;
-    border-left: .25em solid #ffa7c4;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #ffa7c4;
   }
 
   & p > code.language-text,
@@ -111,7 +111,7 @@ class Content extends React.Component {
 
     return (
       <section>
-        {(tags) && <ContentHeader tags={tags} />}
+        {tags && <ContentHeader tags={tags} />}
         <ContentBody dangerouslySetInnerHTML={{ __html: content }} />
       </section>
     )

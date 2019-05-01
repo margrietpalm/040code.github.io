@@ -17,13 +17,15 @@ class AuthorBio extends React.Component {
 
     return (
       <Fragment>
-        <AuthorAvatar style={{ backgroundImage: `url("${author.frontmatter.avatar.publicURL}")` }} />
-        <AuthorHandles author={author}/>
-        <Content
-          content={author.html}
+        <AuthorAvatar
+          style={{
+            backgroundImage: `url("${author.frontmatter.avatar.publicURL}")`,
+          }}
         />
+        <AuthorHandles author={author} />
+        <Content content={author.html} />
       </Fragment>
     )
   }
 }
-export default AuthorBio 
+export default AuthorBio

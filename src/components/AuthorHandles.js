@@ -15,16 +15,14 @@ const SocialWrapper = styled.div`
     color: #ffffff;
     font-size: 2em;
   }
-  `
+`
 class AuthorHandles extends React.Component {
-
-  
   render() {
     const { github, linkedin, twitter, email } = this.props.author.frontmatter
-    
+
     const TwitterLink = ({ handle }) => {
       return (
-        <span className="social-item" >
+        <span className="social-item">
           <a className="social-link" href={`https://twitter.com/${handle}`}>
             <FaTwitter />
           </a>
@@ -34,7 +32,7 @@ class AuthorHandles extends React.Component {
 
     const GithubLink = ({ handle }) => {
       return (
-        <span className="social-item" >
+        <span className="social-item">
           <a className="social-link" href={`https://github.com/${handle}`}>
             <FaGithub />
           </a>
@@ -44,8 +42,11 @@ class AuthorHandles extends React.Component {
 
     const LinkedinLink = ({ handle }) => {
       return (
-        <span className="social-item" >
-          <a className="social-link" href={`https://www.linkedin.com/in/${handle}`}>
+        <span className="social-item">
+          <a
+            className="social-link"
+            href={`https://www.linkedin.com/in/${handle}`}
+          >
             <FaLinkedin />
           </a>
         </span>
@@ -54,7 +55,7 @@ class AuthorHandles extends React.Component {
 
     const EmailLink = ({ handle }) => {
       return (
-        <span className="social-item" >
+        <span className="social-item">
           <a className="social-link" href={`mailto:${handle}`}>
             <FaEnvelope />
           </a>
@@ -64,12 +65,12 @@ class AuthorHandles extends React.Component {
 
     return (
       <SocialWrapper>
-          <TwitterLink handle={twitter} />
-          <GithubLink handle={github} />
-          <LinkedinLink handle={linkedin} />
-          <EmailLink handle={email} />
+        <TwitterLink handle={twitter} />
+        <GithubLink handle={github} />
+        <LinkedinLink handle={linkedin} />
+        <EmailLink handle={email} />
       </SocialWrapper>
     )
   }
 }
-export default AuthorHandles 
+export default AuthorHandles

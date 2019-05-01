@@ -47,7 +47,7 @@ const Excerpt = styled.p`
 `
 
 const PostTitleLink = styled(Link)`
-  font-size: 1.6rem;  
+  font-size: 1.6rem;
   font-weight: bold;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   &:hover {
@@ -58,7 +58,7 @@ const PostSubTitle = styled.p`
   padding: 0.8rem 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
 `
 
 class PostsListItem extends React.Component {
@@ -89,4 +89,3 @@ class PostsListItem extends React.Component {
   }
 }
 export default PostsListItem
-

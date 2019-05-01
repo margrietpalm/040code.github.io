@@ -16,10 +16,7 @@ class Article extends React.Component {
 
     return (
       <ArticleWrapper>
-        <Content
-          content={post.html}
-          tags={post.frontmatter.tags}
-        />
+        <Content content={post.html} tags={post.frontmatter.tags} />
       </ArticleWrapper>
     )
   }

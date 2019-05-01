@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: '040code',
-  siteDescription: "A developers blog",
+  siteDescription: 'A developers blog',
   authorName: '040 code',
   twitterUsername: 'niekos77',
   authorAvatar: '',
@@ -25,20 +25,20 @@ module.exports = {
     },
     {
       label: 'Niek Palm',
-      url: '/authors/niek'
+      url: '/authors/niek',
     },
     {
       label: 'Maarten Metz',
-      url: '/authors/maarten'
+      url: '/authors/maarten',
     },
     {
       label: 'Jeroen Knoops',
-      url: '/authors/jeroen'
+      url: '/authors/jeroen',
     },
     {
       label: 'Stefan van den Oord',
-      url: '/authors/stefan'
-    }
+      url: '/authors/stefan',
+    },
   ],
   // Footer information (ex: Github, Netlify...)
   footerLinks: [

@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { slide as BurgerMenu } from 'react-burger-menu'
 
-
-
 const StyledBurgerMenu = styled.div`
   /* Position and sizing of burger button */
   .bm-burger-button {
@@ -33,7 +31,7 @@ const StyledBurgerMenu = styled.div`
 
   /* General sidebar styles */
   .bm-menu {
-    background: rgb(0,0,0,0.5);
+    background: rgb(0, 0, 0, 0.5);
     padding: 2.5em 1em 0;
     font-size: 1.15em;
   }
@@ -59,8 +57,7 @@ const StyledBurgerMenu = styled.div`
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
-`;
-
+`
 
 const MenuLink = styled(Link)`
   position: relative;

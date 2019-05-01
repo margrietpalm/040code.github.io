@@ -17,14 +17,16 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        
-          { (post.frontmatter.asciinema) &&
-            <Helmet>
-            <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
-            <script src="/asciinema-player.js"></script>
-            </Helmet>
-          }
-   
+        {post.frontmatter.asciinema && (
+          <Helmet>
+            <link
+              rel="stylesheet"
+              type="text/css"
+              href="/asciinema-player.css"
+            />
+            <script src="/asciinema-player.js" />
+          </Helmet>
+        )}
 
         <SEO
           title={post.frontmatter.title}
@@ -43,7 +45,8 @@ class BlogPostTemplate extends React.Component {
 
         <Hero
           heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL}
-          title={post.frontmatter.title} subtitle={post.frontmatter.subtitle}
+          title={post.frontmatter.title}
+          subtitle={post.frontmatter.subtitle}
           date={post.frontmatter.date}
           authors={post.frontmatter.authors}
           coverLink={post.frontmatter.coverLink}
@@ -54,12 +57,15 @@ class BlogPostTemplate extends React.Component {
           <Article post={post} />
         </Wrapper>
 
-        {post.frontmatter.comments &&
+        {post.frontmatter.comments && (
           <Wrapper>
-            <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title}/>
+            <Disqus
+              slug={post.frontmatter.slug}
+              title={post.frontmatter.title}
+            />
             <PrevNextPost previous={previous} next={next} />
           </Wrapper>
-        }
+        )}
       </Layout>
     )
   }

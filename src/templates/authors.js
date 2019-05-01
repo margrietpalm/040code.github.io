@@ -24,7 +24,9 @@ class Authors extends React.Component {
         />
 
         <Hero
-          heroImg={author.frontmatter.cover && author.frontmatter.cover.publicURL}
+          heroImg={
+            author.frontmatter.cover && author.frontmatter.cover.publicURL
+          }
           title={author.frontmatter.title}
         />
 
@@ -33,19 +35,25 @@ class Authors extends React.Component {
         </Wrapper>
 
         <Wrapper>
-          <h1 style={{ margin: '0 0 2em 0' }}>Posts authored by "{this.props.pageContext.author}"</h1>
+          <h1 style={{ margin: '0 0 2em 0' }}>
+            Posts authored by "{this.props.pageContext.author}"
+          </h1>
           <PostsList posts={posts} />
         </Wrapper>
       </Layout>
     )
-  }l
+  }
+  l
 }
 
 export default Authors
 
 export const pageQuery = graphql`
   query PostsByAuthor($author: String!) {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {authors: {eq: $author}}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { authors: { eq: $author } } }
+    ) {
       edges {
         node {
           excerpt
@@ -61,7 +69,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    author: markdownRemark(frontmatter: {slug: {eq: $author}, type: {eq: "author"}}) {
+    author: markdownRemark(
+      frontmatter: { slug: { eq: $author }, type: { eq: "author" } }
+    ) {
       html
       frontmatter {
         date(formatString: "YYYY-MM-DD")

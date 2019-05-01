@@ -27,7 +27,6 @@ const TagListItem = styled(Link)`
   &:hover {
     border-bottom: 1px dotted #787676;
   }
-
 `
 
 class TagList extends React.Component {
@@ -40,7 +39,9 @@ class TagList extends React.Component {
         {tags.map((tag, i) => {
           return (
             <Fragment key={`tag-list-${i}`}>
-              <TagListItem className="w3-round-size" to={`tags/${tag}`}>{tag}</TagListItem>
+              <TagListItem className="w3-round-size" to={`tags/${tag}`}>
+                {tag}
+              </TagListItem>
               {i < tags.length - 1 ? ' ' : ''}
             </Fragment>
           )

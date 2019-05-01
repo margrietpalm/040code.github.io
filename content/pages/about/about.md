@@ -9,7 +9,7 @@ type: page
 
 # The blog
 
-The 040 code blog is an initiative from Developers that have a relation with the city [Eindhoven](https://www.thisiseindhoven.com/en), in the [Netherlonds](https://www.youtube.com/watch?v=eE_IUPInEuc). The name `040` points to area code used at the time we used the old landline for calling our friends and family.
+The 040 code blog is an initiative from Developers that have a relation with the city [Eindhoven](https://www.thisiseindhoven.com/en), in the [Netherlands](https://www.youtube.com/watch?v=eE_IUPInEuc). The name `040` points to area code used at the time we used the old landline for calling our friends and family.
 
 Articles on this blog are our ideas, experiments and opinion. For each blog post we make a nice picture from a place in Eindhoven that we like for some reason.
 <p><br></p>

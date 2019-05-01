@@ -79,7 +79,6 @@ const LocationLink = styled.a`
   &:hover {
     border-bottom: 1px dotted #787676;
   }
-
 `
 
 const LocationMarker = styled.span`
@@ -102,29 +101,35 @@ class Hero extends React.Component {
 
     return (
       <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
-
         <TitleContainer>
           <HeroTitle>{title}</HeroTitle>
           <HeroSubtitle>{subtitle}</HeroSubtitle>
-          {(authors) && (authors.length != 0) &&
+          {authors && authors.length != 0 && (
             <DateAndAuthor>
-            by: {authors && authors.map((author, i) => {
-              return (
-                <Fragment key={`author-list-${i}`}>
-                  <AuthorLink to={`authors/${author}`}>{author}</AuthorLink>
-                  {i < authors.length - 1 ? ' ' : ''}
-                </Fragment>
-              )
-            })}
-             &nbsp; on {date}</DateAndAuthor>
-          }
+              by:{' '}
+              {authors &&
+                authors.map((author, i) => {
+                  return (
+                    <Fragment key={`author-list-${i}`}>
+                      <AuthorLink to={`authors/${author}`}>{author}</AuthorLink>
+                      {i < authors.length - 1 ? ' ' : ''}
+                    </Fragment>
+                  )
+                })}
+              &nbsp; on {date}
+            </DateAndAuthor>
+          )}
         </TitleContainer>
-        { (coverDescription) && (coverLink) &&
-        <LocationContainer>
-          <LocationMarker><span className="fa fa-map-marker-alt"></span></LocationMarker>
-          <LocationLink href={coverLink} target="_blank">{coverDescription}</LocationLink>
-        </LocationContainer>
-        }
+        {coverDescription && coverLink && (
+          <LocationContainer>
+            <LocationMarker>
+              <span className="fa fa-map-marker-alt" />
+            </LocationMarker>
+            <LocationLink href={coverLink} target="_blank">
+              {coverDescription}
+            </LocationLink>
+          </LocationContainer>
+        )}
       </HeroContainer>
     )
   }
