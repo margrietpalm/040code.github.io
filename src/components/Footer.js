@@ -10,7 +10,7 @@ const FooterWrapper = styled.footer`
   color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
+  margin: 3.5em auto 0 0 ;
 
   & nav {
     display: flex;
@@ -88,6 +88,7 @@ class Footer extends React.Component {
       if (item.url.startsWith('/')) {
         return (
           <span className="footer-item">
+            {item.prefix}
             <Link className="footer-link" to={item.url}>
               {item.label}
             </Link>
@@ -96,6 +97,8 @@ class Footer extends React.Component {
       }
       return (
         <span className="footer-item">
+          {item.prefix}
+          <i className={item.iconClassName}></i>
           <a className="footer-link" href={item.url}>
             {item.label}
           </a>
@@ -116,17 +119,6 @@ class Footer extends React.Component {
     return (
       <FooterWrapper>
         <nav>
-          <div className="footer-col">
-            <h5 className="footer-title">{authorName} © 2019</h5>
-            <p className="footer-item-text">
-              Built with{' '}
-              <a className="footer-link" href="https://www.gatsbyjs.org">
-                Gatsby
-              </a>
-              .
-            </p>
-
-          </div>
           {footerLinks.map((column, i) => {
             return <FooterColumn column={column} key={`footer-column-${i}`} />
           })}
