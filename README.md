@@ -1,5 +1,7 @@
 # 040 code blog
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/040code/040code.github.io.svg)](https://greenkeeper.io/)
+
 ## Purpose
 
 This repo contains the source of the [040 code blog](https://040code.github.io).
