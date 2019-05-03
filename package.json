@@ -5,7 +5,7 @@
   "author": "Niek, Jeroen",
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
-    "core-js": "^3.0.1",
+    "core-js": "^2.5.7",
     "disqus-react": "^1.0.5",
     "gatsby": "^2.0.68",
     "gatsby-plugin-feed": "2.2.0",
@@ -65,5 +65,11 @@
     "now-build": "npm run build",
     "generatePostPreviewImages": "node ./scripts/generatePostPreviewImages.js",
     "semantic-release": "semantic-release"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "core-js"
+    ]
   }
+
 }
