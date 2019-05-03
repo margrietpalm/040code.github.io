@@ -19,6 +19,9 @@ This blog is created with the [Gatsby](https://www.gatsbyjs.org/), an awesome fr
 ## How to contribute
 
 Fork the repo, do your changes and create a pull request. Everybody is welcome to write an article.
+The main branch to work from is: `source`
+
+The `master` contains the static page created by travis-ci and gatsby.
 
 ## How to run
 
