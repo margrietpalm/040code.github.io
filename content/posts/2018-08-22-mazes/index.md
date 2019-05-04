@@ -205,15 +205,15 @@ maze.
 
 First, the top of the maze is printed:
 
-```Ascii
-`+---+---+---+`
+```
++---+---+---+
 ```
 
 Then, for every row the left border is printed `|` and 2 passes over the cells
 have to be made. The first pass determines if there should be a border between
 the current cell and its `east-of` neighbour, resulting in something like this:
 
-```Ascii
+```
 +---+---+---+---+
 |           |   |
 ```
@@ -222,7 +222,7 @@ The second pass over the row adds a `+` and then determines if there should be a
 border between the current cell and its `south-of` neighbour, for instance
 resulting in this:
 
-```Ascii
+```
 +---+---+---+---+
 |           |   |
 +---+---+   +   +
@@ -230,7 +230,7 @@ resulting in this:
 
 After repeating this for all rows, a maze like this is printed:
 
-```Ascii
+```
 +---+---+---+---+
 |           |   |
 +---+---+   +   +

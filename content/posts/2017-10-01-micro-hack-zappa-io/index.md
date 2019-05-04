@@ -68,20 +68,20 @@ zappa>=0.17.6
 ### Install required libraries in virtual environment
 Create a virtaul environment and activate it.
 
-``` fish
+``` bash
 virtualenv venv
 source venv/bin/activate.fish
 ```
 Note: If you use `zsh` or `bash` you can use: `source venv/bin/activate`
 
-``` fish
+``` bash
 pip install -r requirements.txt
 ```
 
 ### Setup Zappa and deploy the service
 Setup Zappa:
 
-``` fish
+``` bash
 zappa init
 ```
 
@@ -118,7 +118,7 @@ The output is the url to our service. You see it's https out-of-the-box.. :)
 The previous step will output an url to our service. In my case: https://z9cxt9gky6.execute-api.eu-west-1.amazonaws.com/dev/
 
 Append the test string behind it and check the result.
-``` fish
+``` bash
 curl https://z9cxt9gky6.execute-api.eu-west-1.amazonaws.com/dev/thisisateststring
 ```
 
