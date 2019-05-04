@@ -57,8 +57,8 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { type: { ne: "page" } } }
-      limit: 5
+      filter: { frontmatter: { type: { eq: "post" } } }
+      limit: 6 
     ) {
       edges {
         node {
