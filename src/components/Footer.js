@@ -75,7 +75,7 @@ const FooterWrapper = styled.footer`
 
 class Footer extends React.Component {
   render() {
-    const { authorName, footerLinks, websiteHost } = this.props.siteConfig
+    const { footerLinks } = this.props.siteConfig
 
     const FooterItem = ({ item }) => {
       if (typeof item === 'string') {
