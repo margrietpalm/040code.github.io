@@ -24,6 +24,10 @@ module.exports = {
       url: '/',
     },
     {
+      label: 'About',
+      url: '/about',
+    },
+    {
       label: 'Niek Palm',
       url: '/authors/niek',
     },
@@ -46,7 +50,7 @@ module.exports = {
       '040 code © 2019',
       {
         label: 'Gatsby',
-        prefix: 'Buildt with ',
+        prefix: 'Build with ',
         url: 'https://www.gatsbyjs.org/',
       },
     ],
