@@ -24,11 +24,8 @@ type:      post
 using ClojureScript and shadow-cljs*
 
 <p style="text-align: right">
-  <a href="https://github.com/svdo/CLJSReactNativeNavigation" target="sourcecode"><img
-    src="./GitHub-Mark-120px-plus.png"
-    height="40" width="40"
-    alt="GitHub"
-    style="display: inline; margin-right: 10px;" />Source code for this post</a></p>
+  <a href="https://github.com/svdo/CLJSReactNativeNavigation" target="sourcecode">
+  <i class="fab fa-github" style="font-size: 200%">&nbsp;</i>Source code for this post</a></p>
 
 That's a big bunch of words. Let me briefly introduce them to you, so that I can
 then dive deeper into some of them. "Beginner" in this case means that, a week
@@ -472,7 +469,7 @@ Like I said in the beginning, future versions of any of the tools may break
 this guide. So it is only fair to mention which versions I was using for this:
 
 | Tool                    | Version                    |
-|-------------------------|----------------------------|
+| ----------------------- | -------------------------- |
 | node                    | 11.10.1                    |
 | npm                     | 6.5.0-next.0               |
 | react                   | 16.8.3                     |
