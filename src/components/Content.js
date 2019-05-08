@@ -5,22 +5,28 @@ import ContentHeader from './ContentHeader'
 const ContentBody = styled.div`
   line-height: 1.6;
 
+  & > h1:first-of-type {
+    padding-top: 0;
+    
+  }
+
+  & > h1 {
+    margin-top: 3rem;
+    font-size: 2em;
+  }
+
   & > h2:first-of-type {
     padding-top: 0;
   }
 
   & > h2 {
-    padding-top: 3rem;
     margin-top: 3rem;
-    border-top: 1px solid #ececec;
-  }
-
-  & > h3:first-of-type {
-    padding-top: 0;
+    font-size: 1.5em;
   }
 
   & > h3 {
     padding-top: 3rem;
+    font-size: 1.17em;
   }
 
   & > p {
