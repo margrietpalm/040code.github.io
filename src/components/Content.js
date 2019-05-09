@@ -109,6 +109,11 @@ const ContentBody = styled.div`
       border-bottom: 2px solid white;
     }
   }
+
+  & :not(pre) a code[class*='language-'] {
+    color: #222222cc;
+    background-color: rgba(255, 229, 100, 0.2);
+  }
 `
 
 class Content extends React.Component {
