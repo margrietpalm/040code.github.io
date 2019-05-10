@@ -111,4 +111,4 @@ asciinema:  true
 MIT
 
 ## Authors
-[Contributors](./graphs/contributors)
+[Contributors](https://github.com/040code/040code.github.io/graphs/contributors)
