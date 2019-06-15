@@ -4,7 +4,7 @@
   "version": "0.0.0-development",
   "author": "Niek, Jeroen",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
+    "babel-plugin-styled-components": "^1.10.1",
     "core-js": "^2.5.7",
     "disqus-react": "^1.0.5",
     "gatsby": "^2.4.2",
