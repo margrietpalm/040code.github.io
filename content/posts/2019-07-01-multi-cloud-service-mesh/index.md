@@ -256,7 +256,7 @@ Now our postcard application should get the message from the second cluster, go 
 That is all you need to do for creating a cross cluster service mesh. 
 
 
-## Cleanup
+## Clean-up
 The cleanup setps below assume you created fresh cluster and don't use them for hosting other applications. The Amazon cluster was created via `eksctl`. This tool actually create clouf formation stacks in Amazon. Before you delete the stack, you need to delete the load balancer created by Istio. 
 
 ```
@@ -275,3 +275,6 @@ For Google Cloud the deletion is very easy. Deletion of the cluster will delete 
 ```
 cloud container clusters delete --zone europe-west3-b $CLUSTER_NAME
 ```
+
+## Acknowledgement
+The example used in the blog is inspired by a great talk from Matt Turner at the KubeCon 2018 in Barcelona. His talk and example is available in the blog post [Cross-cluster Calls Made Easy with Istio 1.1](https://mt165.co.uk/speech/cross-cluster-calls-istio-1-1-kubecon-eu-19/).
