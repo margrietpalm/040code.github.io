@@ -21,6 +21,10 @@ authors:
   - niek
 ---
 
+# A multi cloud service mesh with Istio
+
+*This post guide you to create a multi cloud service mesh with Istio on Kubernetes clusters in Amazon and Google cloud.*
+
 <p style="text-align: right">
   <a href="https://github.com/npalm/cross-cluster-mesh-postcard" target="sourcecode">
   <i class="fab fa-github" style="font-size: 200%">&nbsp;</i>Source code for this post</a></p>
@@ -42,13 +46,13 @@ Before we diving in building our multi cloud service mesh a few words about how 
 
 ![istio-architecture](./istio-arch.svg)
 
-To create a cross cluster mesh with Istio there are two topologies. In the first scenario there is a single control plain that controls all the cluster. In the second scenario a single control plain is deployed to every cluster and you have to ensure the same configuration is pushed to each cluster. In this post we will create an example based on the second option, a control plane in every cluster. 
+To create a cross cluster mesh with Istio there are two topologies. In the first scenario there is a single control plain that controls all the cluster. In the second scenario a single control plain is deployed to every cluster and you have to ensure the same configuration is pushed to each cluster. In this post we will create an example based on the second option, a control plane in every cluster.
 
 ![istio-multi-cluster](./multicluster-with-gateways.svg)
 
 
 ## Building a cross cluster mesh
-Lets get started with building a multi cloud service mesh. A quite similar similar example as below is available on my [GitHub](). The example on GitHub is scripted with a set of simple shell scripts and created 3 clusters in 2 clouds. For this post we limited our selves to just 2 clusters in 2 clouds.
+Lets get started with building a multi cloud service mesh. A quite similar similar example as below is available on my [GitHub](https://github.com/npalm/cross-cluster-mesh-postcard). The example on GitHub is scripted with a set of simple shell scripts and created 3 clusters in 2 clouds. For this post we limited our selves to just 2 clusters in 2 clouds.
 
 We will create 2 clusters and install in both clusters the Istio service mesh, one cluster on AWS (EKS) and the second on Google (GKE). For creating clusters you need to setup your environment with the right tools and credentials. For AWS the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) is required, for Google you need the [Google Cloud SDK](https://cloud.google.com/sdk/). Furthermore you need to install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) to interact with Kubernetes. And [helm](https://helm.sh/) as packagem manager for Kubernetes.
 
@@ -272,8 +276,8 @@ Now our postcard application should get the message from the second cluster, go 
 That is all you need to do for creating a cross cluster service mesh. 
 
 
-## Clean-up
-The cleanup setps below assume you created fresh cluster and don't use them for hosting other applications. The Amazon cluster was created via `eksctl`. This tool actually create clouf formation stacks in Amazon. Before you delete the stack, you need to delete the load balancer created by Istio. 
+## Cleanup
+The cleanup steps below assume you created fresh cluster and don't use them for hosting other applications. The Amazon cluster was created via `eksctl`. This tool actually create cloud formation stacks in Amazon. Before you delete the stack, you need to delete the load balancer created by Istio. 
 
 ```
 # Find the load balancer
@@ -282,7 +286,7 @@ aws elb describe-load-balancers | jq -r ".LoadBalancerDescriptions[].LoadBalance
 # delete the load balancer  
 aws elb delete-load-balancer --load-balancer-name <lb-name>
 ```
-Now you can delete the cluster, the deletion is a asynchronous process. Ensure you verify the deletion went OK. In case it fails, happens many times to me. Delete the VPC and retry the delete via cloud formation.
+Now you can delete the cluster, the deletion is a asynchronous process. Ensure you verify the deletion went well. In case it fails, happens many times to me. Delete the VPC and retry the delete via cloud formation.
 ```
 delete cluster --name mesh-1 --region=eu-central-1
 ```
