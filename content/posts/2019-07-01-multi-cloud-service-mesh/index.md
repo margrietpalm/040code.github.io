@@ -276,5 +276,5 @@ For Google Cloud the deletion is very easy. Deletion of the cluster will delete 
 cloud container clusters delete --zone europe-west3-b $CLUSTER_NAME
 ```
 
-## Acknowledgement
-The example used in the blog is inspired by a great talk from Matt Turner at the KubeCon 2018 in Barcelona. His talk and example is available in the blog post [Cross-cluster Calls Made Easy with Istio 1.1](https://mt165.co.uk/speech/cross-cluster-calls-istio-1-1-kubecon-eu-19/).
+## Acknowledgements
+The example used in the blog is inspired by a great talk from Matt Turner at the KubeCon - CloudNativeCon 2019 in Barcelona. His talk and example is available in the blog post [Cross-cluster Calls Made Easy with Istio 1.1](https://mt165.co.uk/speech/cross-cluster-calls-istio-1-1-kubecon-eu-19/).
