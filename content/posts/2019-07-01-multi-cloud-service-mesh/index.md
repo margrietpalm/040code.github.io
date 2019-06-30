@@ -1,5 +1,5 @@
 ---
-slug:       "2019/06/25/cross-cluster-service-mesh"
+slug:       "2019/07/01/cross-cluster-service-mesh"
 title:      "Service Mesh"
 subtitle:   "A Multi Cloud Mesh with Istio"
 date:       2019-07-01
@@ -20,6 +20,10 @@ tags:
 authors:
   - niek
 ---
+
+<p style="text-align: right">
+  <a href="https://github.com/npalm/cross-cluster-mesh-postcard" target="sourcecode">
+  <i class="fab fa-github" style="font-size: 200%">&nbsp;</i>Source code for this post</a></p>
 
 ## Introduction
 The last years we have seen a huge adoption of micro services architectures. Typically micro services brings a lot ff benefits such as flexibility, modularity, autonomy. But deploying and managing micro services architectures brings other difficulties. How dow you know what is running, how do you know your services are compliant? Another pattern that we see is that micro services ar typically heavy loaded with common dependencies for logging, authentication, authorization, tracing and many more cross cutting concerns.
