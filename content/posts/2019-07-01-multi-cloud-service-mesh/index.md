@@ -157,17 +157,23 @@ The greeter app will print an error message in case the messenger is not availab
 
 ```
 # Deploy greeter pod and service
-curl -L https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/greeter/greeter.yaml | sed "s/CLUSTER_NAME/${CLUSTER_NAME}/" | kubectl apply -f -
+curl -L \
+  https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/greeter/greeter.yaml \
+  | sed "s/CLUSTER_NAME/${CLUSTER_NAME}/" | kubectl apply -f -
 
 # create gateway for greeter service
-kubectl apply -f https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/greeter/gateway.yaml
+kubectl apply -f \
+  https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/greeter/gateway.yaml
 
 ```
 
 Once deployed we should already be able to see our postcard via a browser. You can construct the URL with the command below. It can taka few minutes before Load Balancer is ready to accept traffic.
 
 ```
-open http://$(kubectl -n istio-system \\nget service istio-ingressgateway \\n-o jsonpath='{.status.loadBalancer.ingress[0].hostname}')/greeter
+export ISTIO_INGRESS=$(kubectl -n istio-system \
+  get service istio-ingressgateway \
+  -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+open http://${ISTIO_INGRESS}/greeter
 ```
 
 The postcard shows no message from th second, cluster. But our greeter app is up and running. The next steps is creating the second cluster.
@@ -212,17 +218,23 @@ EOF
 ### The Postcard sample application - part II
 On the second cluster we deploy the messenger app that simply sends a message back. The message can be configures via an environment variable. Install the messenger the app with the `kubectl` command below.
 
-
+```
 # Deploy greeter pod and service
-curl -L https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/messenger/messenger.yaml | sed "s/MESSAGE_TEXT/All good from Google Cloude/" | kubectl apply -f -
-
+curl -L \
+  https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/messenger/messenger.yaml \
+  | sed "s/MESSAGE_TEXT/All good from Google Cloude/" \
+  | kubectl apply -f -
+```
 
 Only one step left now. We need to configure the first cluster with a service entry so the mesh knows how to route calls for `messanger.default.global`. We switch back to the terminal where we have created the first cluster on Amazon. And lookup using the kubeconfig from the second cluster the ip address of the ingress loadbalancer. Next we create a service entry.
 
 
 ```
 # Lookup the ingress ip address
-export CLUSTER_GW_ADDR=$(kubectl --kubeconfig=kubeconfig-istio-2.config get svc --selector=app=istio-ingressgateway -n istio-system -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
+export CLUSTER_GW_ADDR=$(kubectl \
+  --kubeconfig=kubeconfig-istio-2.config \
+  get svc --selector=app=istio-ingressgateway -n istio-system \
+  -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
 echo $CLUSTER_GW_ADDR
 
 # Create a service entry
