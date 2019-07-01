@@ -32,14 +32,9 @@ authors:
 ## Introduction
 The last years we have seen a huge adoption of micro services architectures. Typically micro services brings a lot ff benefits such as flexibility, modularity, autonomy. But deploying and managing micro services architectures brings other difficulties. How dow you know what is running, how do you know your services are compliant? Another pattern that we see is that micro services ar typically heavy loaded with common dependencies for logging, authentication, authorization, tracing and many more cross cutting concerns.
 
-A service mesh brings transparency to the chaos of micro services. A mesh can help with implementing, enforcing and managing requirements such as authentication, authorization, traceability and, data integrity. It also provides features as orchestration and collection of telemetry.
+A service mesh brings transparency to the chaos of micro services. A mesh can help with implementing, enforcing and managing requirements such as authentication, authorization, traceability and, data integrity. It also provides features as orchestration and collection of telemetry. There are currently several service meshes out, for example [App Mesh](https://aws.amazon.com/app-mesh/) from Amazon, [Consol](https://www.consul.io/) from HashiCorp, [Linkerd](https://linkerd.io/) from the CNNF and [Istio](https://istio.io/) launched by IBM, Lyft and Google in 2016. Istio is a fully open source solution based on the high performance proxy [Envoy](https://www.envoyproxy.io/).
 
-There are currently several service meshes out, for example [App Mesh](https://aws.amazon.com/app-mesh/) from Amazon, [Consol](https://www.consul.io/) from HashiCorp, [Linkerd](https://linkerd.io/) from the CNNF and [Istio](https://istio.io/) launched by IBM, Lyft and Google in 2016. Istio is a fully open source solution based on the high performance proxy [Envoy](https://www.envoyproxy.io/).
-
-Another trend in the industry is multi cloud or hybrid cloud. Confusing terms, no clear definitions. But it look likes common sense when we speaking about multi cloud we point to combining public clouds. And hybrid cloud is when you mix and match public with private cloud.
-
-When you start running cross cloud clusters it becomes even harder to manage all your micro services. Be confident that policies are implemented well or compliant. In this multi / hybrid topology, abstraction from cross cutting concerns to a mesh becomes even more important. In this blog we go to build a multi cloud [Kubernetes](https://kubernetes.io/) cluster with an Istio service mesh.
-
+Another trend in the industry is multi cloud or hybrid cloud. Confusing terms, no clear definitions. But it look likes common sense when we speaking about multi cloud we point to combining public clouds. And hybrid cloud is when you mix and match public with private cloud. When you start running cross cloud clusters it becomes even harder to manage all your micro services. Be confident that policies are implemented well or compliant. In this multi / hybrid topology, abstraction from cross cutting concerns to a mesh becomes even more important. In this blog we go to build a multi cloud [Kubernetes](https://kubernetes.io/) cluster with an Istio service mesh.
 
 ## A bit more about a Service Mesh
 Before we diving in building our multi cloud service mesh a few words about how a mesh works. An Istio mesh consists of two parts. A data plane, intelligent proxies (Envoy) deployed as sidecars. These proxies mediate and control the network traffic. The second component is the control plane which manages and configures the proxies, and enforce policies.
@@ -49,7 +44,6 @@ Before we diving in building our multi cloud service mesh a few words about how 
 To create a cross cluster mesh with Istio there are two topologies. In the first scenario there is a single control plain that controls all the cluster. In the second scenario a single control plain is deployed to every cluster and you have to ensure the same configuration is pushed to each cluster. In this post we will create an example based on the second option, a control plane in every cluster.
 
 ![istio-multi-cluster](./multicluster-with-gateways.svg)
-
 
 ## Building a cross cluster mesh
 Lets get started with building a multi cloud service mesh. A quite similar similar example as below is available on my [GitHub](https://github.com/npalm/cross-cluster-mesh-postcard). The example on GitHub is scripted with a set of simple shell scripts and created 3 clusters in 2 clouds. For this post we limited our selves to just 2 clusters in 2 clouds.
@@ -104,16 +98,15 @@ helm install istio-$ISTIO_VERSION/install/kubernetes/helm/istio-init \
 
 ```
 The last step could take a minute or so, check with `
-kubectl get crds | grep 'istio.io' | wc -l` if the Istio custom resources are created. Once finished there should be 53 custom resources created.
+kubectl get crds | grep 'istio.io' | wc -l` if the Istio custom resources are created. Once finished there should be 53 custom resources created. The last step for installing the service mesh is to create the Istio control plan.
 
-The finial step for installing the service mesh is to create the Istio control plan.
 ```
 helm install --name istio --namespace istio-system \
   istio-$ISTIO_VERSION/install/kubernetes/helm/istio \
   --values istio-$ISTIO_VERSION/install/kubernetes/helm/istio/example-values/values-istio-multicluster-gateways.yaml 
 ```
 
-For thes example we simply enable sidecar injection for every pod in the default namespace.
+For this example we simply enable sidecar injection for every pod in the default namespace. The sidecar will function as proxy and intercepts all network traffic to the containers in the pad.
 
 ```
 kubectl label namespace default istio-injection=enabled
@@ -153,15 +146,15 @@ data:
 EOF
 ```
 
-The service mesh on EKS is now ready to start serving applications. 
+The service mesh on EKS is now ready to start serving applications.
 
 
 ### The Postcard sample application
-In this blog post we use a simple polyglot postcards application. It is always fun to write an application in yet another language. The postcard application consists of twe services. The first service is the [greeter](https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/greeter), the greeter is written in NodeJS and generates a webpage with a postcard. The message on the postcard should be provided by the second application, the [messenger](https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/messenger). THe messenger is a Rust application that will run on the second cluster. I returns a string message based on configuration. 
+In this blog post we use a simple polyglot postcards application. It is always fun to write an application in yet another language. The postcard application consists of twe services. The first service is the [greeter](https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/greeter), the greeter is written in NodeJS and generates a webpage with a postcard. The message on the postcard should be provided by the second application, the [messenger](https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/messenger). THe messenger is a Rust application that will run on the second cluster. I returns a string message based on configuration.
 
 ![sequence](./postcard-app.png)
 
-The greeter app will print an error message in case the messenger is not available o. We deploy now the greeter to the Kubernetes cluster on AWS. We create a standard deployment for the pod, a service, a Istio Gateway, and a Istio Virtual service. The Istio resources are created to make the postcard app public available via an ingress. You can check out the configuration files [here](https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/mesh/demo/greeter). During deployment we update the configuration with name of the cluster.
+The greeter app will print an error message in case the messenger is not available. We deploy now the greeter to the Kubernetes cluster on AWS. We create a standard deployment for the pod, a service, a Istio Gateway, and a Istio Virtual service. The Istio resources are created to make the postcard app public available via an ingress. You can check out the configuration files [here](https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/mesh/demo/greeter). During deployment we update the configuration with name of the cluster.
 
 ```
 # Deploy greeter pod and service
@@ -184,13 +177,13 @@ export ISTIO_INGRESS=$(kubectl -n istio-system \
 open http://${ISTIO_INGRESS}/greeter
 ```
 
-The postcard shows no message from th second, cluster. But our greeter app is up and running. The next steps is creating the second cluster.
+The postcard shows no message from the second cluster. But our greeter app is up and running. The next steps is creating the second cluster.
 
 ![postcard](./postcard-1.png)
 
 
 ### Setup and configure GKE cluster
-For the second cluster we create a GKE cluster on Google Cloud. You can replace by a second cluster in Amazon or one in another cloud. The first step is similar to creating a cluster in AWS but now one in Google. Open a new terminal to avoid conflicting envrionment variables. 
+For the second cluster we create a GKE cluster on Google Cloud. You can replace by a second cluster in Amazon or one in another cloud. The first step is similar to creating a cluster in AWS but now one in Google. Open a new terminal to avoid conflicting environment variables.
 
 ```
 export KUBECONFIG=kubeconfig-istio-2.config
@@ -273,7 +266,7 @@ Now our postcard application should get the message from the second cluster, go 
 
 ![postcard](./postcard-2.png)
 
-That is all you need to do for creating a cross cluster service mesh. 
+That is all you need to do for creating a cross cluster service mesh.
 
 
 ## Cleanup
