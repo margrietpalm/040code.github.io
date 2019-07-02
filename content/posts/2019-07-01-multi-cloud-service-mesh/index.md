@@ -38,7 +38,7 @@ A service mesh brings transparency to the chaos of micro services. A mesh can he
 Another trend in the industry is multi cloud or hybrid cloud. Confusing terms, no clear definitions. But it look likes common sense when we speaking about multi cloud we point to combining public clouds. And hybrid cloud is when you mix and match public with private cloud. When you start running cross cloud clusters it becomes even harder to manage all your micro services. Be confident that policies are implemented well or compliant. In this multi / hybrid topology, abstraction from cross cutting concerns to a mesh becomes even more important. In this blog we go to build a multi cloud [Kubernetes](https://kubernetes.io/) cluster with an Istio service mesh.
 
 ## A bit more about a Service Mesh
-Before we diving in building our multi cloud service mesh a few words about how a mesh works. An Istio mesh consists of two parts. A data plane, intelligent proxies (Envoy) deployed as sidecars. These proxies mediate and control the network traffic. The second component is the control plane which manages and configures the proxies, and enforce policies.
+Before we dive into building a multi cloud service mesh, a few words about how a mesh works. An Istio mesh consists of two parts. A data plane, intelligent proxies (Envoy) deployed as sidecars. Those proxies mediate and control the network traffic. The second component is the control plane which manages and configures the proxies, and enforce policies.
 
 ![istio-architecture](./istio-arch.svg)
 
