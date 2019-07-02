@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[040code]]></title><description><![CDATA[A developers blog]]></description><link>https://040code.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 31 May 2019 06:59:33 GMT</lastBuildDate><item><title><![CDATA[How to install]]></title><description><![CDATA[👋 Welcome on gatsby-starter-morning-dew starter template!Installationwith Gatsby-cli: without Gatsby-cliCustomisationIn , you will find the…]]></description><link>https://040code.github.io//how-to-install/how-to-install/</link><guid isPermaLink="false">https://040code.github.io//how-to-install/how-to-install/</guid><content:encoded>&lt;p&gt;👋 Welcome on &lt;strong&gt;gatsby-starter-morning-dew&lt;/strong&gt; starter template!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[040code]]></title><description><![CDATA[A developers blog]]></description><link>https://040code.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 02 Jul 2019 07:53:00 GMT</lastBuildDate><item><title><![CDATA[How to install]]></title><description><![CDATA[👋 Welcome on gatsby-starter-morning-dew starter template!Installationwith Gatsby-cli: without Gatsby-cliCustomisationIn , you will find the…]]></description><link>https://040code.github.io//how-to-install/how-to-install/</link><guid isPermaLink="false">https://040code.github.io//how-to-install/how-to-install/</guid><content:encoded>&lt;p&gt;👋 Welcome on &lt;strong&gt;gatsby-starter-morning-dew&lt;/strong&gt; starter template!&lt;/p&gt;
 &lt;h2 id=&quot;installation&quot;&gt;&lt;a href=&quot;#installation&quot; aria-label=&quot;installation permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -124,7 +124,304 @@ gatsby new gatsby-blog https://github.com/maxpou/gatsby-starter-morning-dew&lt;/
 His professional interests include interaction design, software requirements, – architecture, – design, – construction, – test automation and everything else that makes a system work. He has held presentations and workshops on various topics including Clojure, lean software development, problem solving, professional development, CQRS and mining code repositories.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Niek Palm]]></title><description><![CDATA[Niek PalmI am developing for more than a decade software, mainly based on open source stacks. Currently I am having a full stack focus with…]]></description><link>https://040code.github.io//niek/about/</link><guid isPermaLink="false">https://040code.github.io//niek/about/</guid><content:encoded>&lt;h2 id=&quot;niek-palm&quot;&gt;&lt;a href=&quot;#niek-palm&quot; aria-label=&quot;niek palm permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Niek Palm&lt;/h2&gt;
 &lt;p&gt;I am developing for more than a decade software, mainly based on open source stacks. Currently I am having a full stack focus with my strengths on the backend related services, cloud and continuous delivery. Technologies that me keep busy now a days are: AWS, Terraform, Spring Cloud, React, React Native, Continuous Delivery, Docker, Google Cloud, and much more. &lt;/p&gt;
 &lt;p&gt;But cool technologies are not my only passions. I love to just crab by backpack and go around. Creating some nice meals and exploring the creative area of a cook is one of my favourite hobbies. Drinking a great craft beer is something that I love too. And from time to time the body needs some real exercise so I like to have a run or do a hike.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Stefan van den Oord]]></title><description><![CDATA[Stefan van den OordI love software development. I’m a generalist and I like learning new things all the time. I particulary enjoy using…]]></description><link>https://040code.github.io//stefan/about/</link><guid isPermaLink="false">https://040code.github.io//stefan/about/</guid><content:encoded>&lt;h2 id=&quot;stefan-van-den-oord&quot;&gt;&lt;a href=&quot;#stefan-van-den-oord&quot; aria-label=&quot;stefan van den oord permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stefan van den Oord&lt;/h2&gt;
-&lt;p&gt;I love software development. I’m a generalist and I like learning new things all the time. I particulary enjoy using extreme programming, including practices like pair programming, test-driven design, etc. I also enjoy teaching others about it, for example at conferences, or using coding dojos.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Cloud Run]]></title><description><![CDATA[IntroductionLast week at the Google Next in San Francisco, Google announced Cloud Run. A new platform to enable developers without any…]]></description><link>https://040code.github.io//2019-04-18-cloudrun/</link><guid isPermaLink="false">https://040code.github.io//2019-04-18-cloudrun/</guid><pubDate>Thu, 18 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;introduction&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I love software development. I’m a generalist and I like learning new things all the time. I particulary enjoy using extreme programming, including practices like pair programming, test-driven design, etc. I also enjoy teaching others about it, for example at conferences, or using coding dojos.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Service Mesh]]></title><description><![CDATA[A multi cloud service mesh with IstioThis post guide you to create a multi cloud service mesh with Istio on Kubernetes clusters in Amazon…]]></description><link>https://040code.github.io//2019-07-01-multi-cloud-service-mesh/</link><guid isPermaLink="false">https://040code.github.io//2019-07-01-multi-cloud-service-mesh/</guid><pubDate>Mon, 01 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;a-multi-cloud-service-mesh-with-istio&quot;&gt;&lt;a href=&quot;#a-multi-cloud-service-mesh-with-istio&quot; aria-label=&quot;a multi cloud service mesh with istio permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A multi cloud service mesh with Istio&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;This post guide you to create a multi cloud service mesh with Istio on Kubernetes clusters in Amazon and Google cloud.&lt;/em&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: right&quot;&gt;
+  &lt;a href=&quot;https://github.com/npalm/cross-cluster-mesh-postcard&quot; target=&quot;sourcecode&quot;&gt;
+  &lt;i class=&quot;fab fa-github&quot; style=&quot;font-size: 200%&quot;&gt;&amp;nbsp;&lt;/i&gt;Source code for this post&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The last years we have seen a huge adoption of micro services architectures. Typically micro services brings a lot ff benefits such as flexibility, modularity, autonomy. But deploying and managing micro services architectures brings other difficulties. How dow you know what is running, how do you know your services are compliant? Another pattern that we see is that micro services ar typically heavy loaded with common dependencies for logging, authentication, authorization, tracing and many more cross cutting concerns.&lt;/p&gt;
+&lt;p&gt;A service mesh brings transparency to the chaos of micro services. A mesh can help with implementing, enforcing and managing requirements such as authentication, authorization, traceability and, data integrity. It also provides features as orchestration and collection of telemetry. There are currently several service meshes out, for example &lt;a href=&quot;https://aws.amazon.com/app-mesh/&quot;&gt;App Mesh&lt;/a&gt; from Amazon, &lt;a href=&quot;https://www.consul.io/&quot;&gt;Consol&lt;/a&gt; from HashiCorp, &lt;a href=&quot;https://linkerd.io/&quot;&gt;Linkerd&lt;/a&gt; from the CNNF and &lt;a href=&quot;https://istio.io/&quot;&gt;Istio&lt;/a&gt; launched by IBM, Lyft and Google in 2016. Istio is a fully open source solution based on the high performance proxy &lt;a href=&quot;https://www.envoyproxy.io/&quot;&gt;Envoy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another trend in the industry is multi cloud or hybrid cloud. Confusing terms, no clear definitions. But it look likes common sense when we speaking about multi cloud we point to combining public clouds. And hybrid cloud is when you mix and match public with private cloud. When you start running cross cloud clusters it becomes even harder to manage all your micro services. Be confident that policies are implemented well or compliant. In this multi / hybrid topology, abstraction from cross cutting concerns to a mesh becomes even more important. In this blog we go to build a multi cloud &lt;a href=&quot;https://kubernetes.io/&quot;&gt;Kubernetes&lt;/a&gt; cluster with an Istio service mesh.&lt;/p&gt;
+&lt;h2 id=&quot;a-bit-more-about-a-service-mesh&quot;&gt;&lt;a href=&quot;#a-bit-more-about-a-service-mesh&quot; aria-label=&quot;a bit more about a service mesh permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A bit more about a Service Mesh&lt;/h2&gt;
+&lt;p&gt;Before we diving in building our multi cloud service mesh a few words about how a mesh works. An Istio mesh consists of two parts. A data plane, intelligent proxies (Envoy) deployed as sidecars. These proxies mediate and control the network traffic. The second component is the control plane which manages and configures the proxies, and enforce policies.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/istio-arch-fdc858d2c1e5605229e86884e3838713.svg&quot; alt=&quot;istio-architecture&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To create a cross cluster mesh with Istio there are two topologies. In the first scenario there is a single control plain that controls all the cluster. In the second scenario a single control plain is deployed to every cluster and you have to ensure the same configuration is pushed to each cluster. In this post we will create an example based on the second option, a control plane in every cluster.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/multicluster-with-gateways-4463b084153941d1edea7583fe0befcf.svg&quot; alt=&quot;istio-multi-cluster&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-a-cross-cluster-mesh&quot;&gt;&lt;a href=&quot;#building-a-cross-cluster-mesh&quot; aria-label=&quot;building a cross cluster mesh permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building a cross cluster mesh&lt;/h2&gt;
+&lt;p&gt;Lets get started with building a multi cloud service mesh. A quite similar similar example as below is available on my &lt;a href=&quot;https://github.com/npalm/cross-cluster-mesh-postcard&quot;&gt;GitHub&lt;/a&gt;. The example on GitHub is scripted with a set of simple shell scripts and created 3 clusters in 2 clouds. For this post we limited our selves to just 2 clusters in 2 clouds.&lt;/p&gt;
+&lt;p&gt;We will create 2 clusters and install in both clusters the Istio service mesh, one cluster on AWS (EKS) and the second on Google (GKE). For creating clusters you need to setup your environment with the right tools and credentials. For AWS the &lt;a href=&quot;https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html&quot;&gt;AWS CLI&lt;/a&gt; is required, for Google you need the &lt;a href=&quot;https://cloud.google.com/sdk/&quot;&gt;Google Cloud SDK&lt;/a&gt;. Furthermore you need to install &lt;a href=&quot;https://kubernetes.io/docs/tasks/tools/install-kubectl/&quot;&gt;kubectl&lt;/a&gt; to interact with Kubernetes. And &lt;a href=&quot;https://helm.sh/&quot;&gt;helm&lt;/a&gt; as packagem manager for Kubernetes.&lt;/p&gt;
+&lt;h3 id=&quot;setup-and-configure-eks-cluster&quot;&gt;&lt;a href=&quot;#setup-and-configure-eks-cluster&quot; aria-label=&quot;setup and configure eks cluster permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup and configure EKS cluster&lt;/h3&gt;
+&lt;p&gt;First we create EKS clusters with &lt;code class=&quot;language-text&quot;&gt;eksctl&lt;/code&gt;. But cluster has a quite minimal configuration. See the page of &lt;a href=&quot;https://eksctl.io/&quot;&gt;weaveworks ekstcl&lt;/a&gt; or &lt;a href=&quot;https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html&quot;&gt;AWS&lt;/a&gt; fom more details. Creating a cluster roughly takes 20 minutes. With the command below we create a default EKS cluster, with only one node it’s own VPC.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export KUBECONFIG=kubeconfig-istio-1.config
+export CLUSTER_NAME=mesh-1
+eksctl create cluster \
+  --name $CLUSTER_NAME \
+  --region eu-central-1 \
+  --version 1.13 \
+  --node-type t3.medium \
+  --nodes 1 \
+  --nodes-min 2 \
+  --nodes-max 4 
+  --node-ami auto \
+  --kubeconfig=$KUBECONFIG \
+  --tags &amp;quot;environment=multi-cloud-mesh&amp;quot;
+
+kubectl get nodes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You should now have a Kubernetes cluster running on AWS. Next we download, install and configure Istio for our service mesh. In the steps below we use for simplicity the sample certificates provided by the Istio distribution. Should I really mention that you should replace those certificates for a real life setup…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Download Istio
+export ISTIO_VERSION=1.1.9
+curl -L https://git.io/getLatestIstio | sh -
+export PATH=&amp;quot;$PATH:$PWD/istio-1.1.9/bin&amp;quot;
+
+# Create namespace and install demo certificates 
+kubectl apply -f istio-$ISTIO_VERSION/install/kubernetes/namespace.yaml
+kubectl create secret generic -n istio-system cacerts \
+  --from-file=istio-$ISTIO_VERSION/samples/certs/ca-cert.pem \
+  --from-file=istio-$ISTIO_VERSION/samples/certs/ca-key.pem \
+  --from-file=istio-$ISTIO_VERSION/samples/certs/root-cert.pem \
+  --from-file=istio-$ISTIO_VERSION/samples/certs/cert-chain.pem
+
+# Create a service account for helm.
+kubectl create -f \
+  istio-$ISTIO_VERSION/install/kubernetes/helm/helm-service-account.yaml
+helm init --service-account tiller
+
+# Install the Istio resources
+helm install istio-$ISTIO_VERSION/install/kubernetes/helm/istio-init \
+  --name istio-init --namespace istio-system&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The last step could take a minute or so, check with &lt;code class=&quot;language-text&quot;&gt;kubectl get crds | grep &amp;#39;istio.io&amp;#39; | wc -l&lt;/code&gt; if the Istio custom resources are created. Once finished there should be 53 custom resources created. The last step for installing the service mesh is to create the Istio control plan.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;helm install --name istio --namespace istio-system \
+  istio-$ISTIO_VERSION/install/kubernetes/helm/istio \
+  --values istio-$ISTIO_VERSION/install/kubernetes/helm/istio/example-values/values-istio-multicluster-gateways.yaml &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For this example we simply enable sidecar injection for every pod in the default namespace. The sidecar will function as proxy and intercepts all network traffic to the containers in the pad.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;kubectl label namespace default istio-injection=enabled&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Services in a local Kubernetes share a common DNS suffix (e.g. &lt;code class=&quot;language-text&quot;&gt;svc.cluster.local&lt;/code&gt;). To ba able to route our remote service we have to stub the Kubernetes DNS for the domain name &lt;code class=&quot;language-text&quot;&gt;.glabal&lt;/code&gt;. Service in a remote cluster can then be addressed with the naming convention &lt;code class=&quot;language-text&quot;&gt;&amp;lt;name&amp;gt;.&amp;lt;namespace&amp;gt;.&amp;lt;global&amp;gt;&lt;/code&gt;. Therefore we need to stub the Kubernetes DNS. EKS is using CoreDNS, so we add the config map below.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;kubectl apply -f - &amp;lt;&amp;lt;EOF
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coredns
+  namespace: kube-system
+data:
+  Corefile: |
+    .:53 {
+        errors
+        health
+        kubernetes cluster.local in-addr.arpa ip6.arpa {
+           pods insecure
+           upstream
+           fallthrough in-addr.arpa ip6.arpa
+        }
+        prometheus :9153
+        proxy . /etc/resolv.conf
+        cache 30
+        loop
+        reload
+        loadbalance
+    }
+    global:53 {
+        errors
+        cache 30
+        proxy . $(kubectl get svc -n istio-system istiocoredns -o jsonpath={.spec.clusterIP})
+    }
+EOF&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The service mesh on EKS is now ready to start serving applications.&lt;/p&gt;
+&lt;h3 id=&quot;the-postcard-sample-application&quot;&gt;&lt;a href=&quot;#the-postcard-sample-application&quot; aria-label=&quot;the postcard sample application permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Postcard sample application&lt;/h3&gt;
+&lt;p&gt;In this blog post we use a simple polyglot postcards application. It is always fun to write an application in yet another language. The postcard application consists of twe services. The first service is the &lt;a href=&quot;https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/greeter&quot;&gt;greeter&lt;/a&gt;, the greeter is written in NodeJS and generates a webpage with a postcard. The message on the postcard should be provided by the second application, the &lt;a href=&quot;https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/messenger&quot;&gt;messenger&lt;/a&gt;. THe messenger is a Rust application that will run on the second cluster. I returns a string message based on configuration.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 59.88620199146515%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAABhElEQVQoz31SW27CQAzcF2qAVhBSQiCEQB4kbZH4QUIgzsUnPxyEo9Lx4tC0gVoa2Vrb48daCCFcoC+aooAWYAANyD8+zb4X1sZ6pJRDqHcOrJI6wCewBL6AlMkr8YEC+GA/xQ2tZzwe681mIx90KLIsU71ejypLY0zdRfGq3++r1WqlfiVNp1M9mUwoYAAkQATEZDuO093v9w+LkSRJIsMwtJVALpQC92Kx0OzvMhmNHwAedZimKRE6VBsYMajg6/F4FHEca570xhJFkeEOG7JcLlUQBIqLZUAILICcPuF8PtNaNMf+EI5GI1nbjSThkbTruurZyNQIVmZ4dfcu9LOEw+EgsUdK8HgNJf/sG50NxpWz2czmw/4hhHR4T3RTPdba931zvV4r/so34DsUtN+yLC0h9C1qPp8TYRtmmzvJ2Vae57VqhA3BuiStjO37rel/zkKfTidro+j9HWuwGuM2CYuiUNUv2zuqJed5ri6Xi7Xrne52O6u3261Yr9c2F9q+fQOLCCuHsrZCAAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6854a1ea032315cd528b587ac93d763f/cc182/postcard-app.webp 148w,
+/static/6854a1ea032315cd528b587ac93d763f/f7e40/postcard-app.webp 295w,
+/static/6854a1ea032315cd528b587ac93d763f/1a2f4/postcard-app.webp 590w,
+/static/6854a1ea032315cd528b587ac93d763f/5bf42/postcard-app.webp 703w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6854a1ea032315cd528b587ac93d763f/cf440/postcard-app.png 148w,
+/static/6854a1ea032315cd528b587ac93d763f/d2d38/postcard-app.png 295w,
+/static/6854a1ea032315cd528b587ac93d763f/b9e4f/postcard-app.png 590w,
+/static/6854a1ea032315cd528b587ac93d763f/afda5/postcard-app.png 703w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/6854a1ea032315cd528b587ac93d763f/b9e4f/postcard-app.png&quot;
+          alt=&quot;sequence&quot;
+          title=&quot;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The greeter app will print an error message in case the messenger is not available. We deploy now the greeter to the Kubernetes cluster on AWS. We create a standard deployment for the pod, a service, a Istio Gateway, and a Istio Virtual service. The Istio resources are created to make the postcard app public available via an ingress. You can check out the configuration files &lt;a href=&quot;https://github.com/npalm/cross-cluster-mesh-postcard/tree/master/mesh/demo/greeter&quot;&gt;here&lt;/a&gt;. During deployment we update the configuration with name of the cluster.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Deploy greeter pod and service
+curl -L \
+  https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/greeter/greeter.yaml \
+  | sed &amp;quot;s/CLUSTER_NAME/${CLUSTER_NAME}/&amp;quot; | kubectl apply -f -
+
+# create gateway for greeter service
+kubectl apply -f \
+  https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/greeter/gateway.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Once deployed we should already be able to see our postcard via a browser. You can construct the URL with the command below. It can taka few minutes before Load Balancer is ready to accept traffic.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export ISTIO_INGRESS=$(kubectl -n istio-system \
+  get service istio-ingressgateway \
+  -o jsonpath=&amp;#39;{.status.loadBalancer.ingress[0].hostname}&amp;#39;)
+open http://${ISTIO_INGRESS}/greeter&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The postcard shows no message from the second cluster. But our greeter app is up and running. The next steps is creating the second cluster.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 67.25543478260869%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABn0lEQVQoz4VSS0vDQBjMr+4PEAS9C73pRTyoBw+Cl3hQRNCL0pOitEl2m2Q370eTbJ7ONjFWW3AIYV/zzXyzq7Tf6Lqu/1NKwzD0PY9znuVZURSEGEEQYP/05nbvaP/kcnqu3uGk0m3BdV3f923LCgK/qqqmadI0Xa1W2LpW1cnB5PPtIg4JhJQoigghSZqOykCWZVEU4g9ZLIJZCoH1++eH6dnhlXpc5Ewqw6FhGI7rRGvEcQyHEOxLpL+L5iInbKmbpCgySYZDNMk4M4iBgWma8/kcNOxBFrUsy9I0TYiiruuqrJq6wYfqqLij5xEgMGajHCVEWyx0XXccJ0kSVER1SR7TRjDtBnplhJfneZpIyNjWyQHg4/xu5Z4shICUJK+BQZatklgqYzrYbrt2jGSTDG/9Df0xNVr7p2eobaY9lO6GqRLHEfrBS4LJsiyRKHRAQ6bbtNEXjg3KmIDmBwHnzLZt10Wnjue6eAK4edxlKDFc/nBeyMejzF4eZ69P3KT6xzunxDZ0Rg3HXHqWxZfU4wzZoHW0D0c/0q1M4QvHg+eDTp+GfwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/65a524c772eee3938ab0a86e19810340/cc182/postcard-1.webp 148w,
+/static/65a524c772eee3938ab0a86e19810340/f7e40/postcard-1.webp 295w,
+/static/65a524c772eee3938ab0a86e19810340/1a2f4/postcard-1.webp 590w,
+/static/65a524c772eee3938ab0a86e19810340/4837b/postcard-1.webp 885w,
+/static/65a524c772eee3938ab0a86e19810340/2f819/postcard-1.webp 1180w,
+/static/65a524c772eee3938ab0a86e19810340/e71d5/postcard-1.webp 1472w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/65a524c772eee3938ab0a86e19810340/cf440/postcard-1.png 148w,
+/static/65a524c772eee3938ab0a86e19810340/d2d38/postcard-1.png 295w,
+/static/65a524c772eee3938ab0a86e19810340/b9e4f/postcard-1.png 590w,
+/static/65a524c772eee3938ab0a86e19810340/f9b6a/postcard-1.png 885w,
+/static/65a524c772eee3938ab0a86e19810340/2d849/postcard-1.png 1180w,
+/static/65a524c772eee3938ab0a86e19810340/cef07/postcard-1.png 1472w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/65a524c772eee3938ab0a86e19810340/b9e4f/postcard-1.png&quot;
+          alt=&quot;postcard&quot;
+          title=&quot;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;setup-and-configure-gke-cluster&quot;&gt;&lt;a href=&quot;#setup-and-configure-gke-cluster&quot; aria-label=&quot;setup and configure gke cluster permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup and configure GKE cluster&lt;/h3&gt;
+&lt;p&gt;For the second cluster we create a GKE cluster on Google Cloud. You can replace by a second cluster in Amazon or one in another cloud. The first step is similar to creating a cluster in AWS but now one in Google. Open a new terminal to avoid conflicting environment variables.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export KUBECONFIG=kubeconfig-istio-2.config
+export CLUSTER_NAME=mesh-2
+gcloud container clusters create \
+    --machine-type n1-standard-4 \
+    --num-nodes 1 --enable-autoscaling \
+    --min-nodes 1 --max-nodes 5 \
+    --addons HttpLoadBalancing,HorizontalPodAutoscaling,KubernetesDashboard \
+    --cluster-version 1.13 --zone europe-west3-b \
+    $CLUSTER_NAME
+
+kubectl create clusterrolebinding mt-admin --user &amp;quot;$(gcloud config get-value core/account)&amp;quot; --clusterrole cluster-admin
+
+kubectl get nodes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The cluster will created in roughly 5 minutes. Next you have to install Istio. The steps are exactly the same as above. Only the last step where we configure the DNS is different since GKE use kube-dns instead of core-dns. Execute the command below to stub  the DNS.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;kubectl apply -f - &amp;lt;&amp;lt;EOF
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kube-dns
+  namespace: kube-system
+data:
+  stubDomains: |
+    {&amp;quot;global&amp;quot;: [&amp;quot;$(kubectl get svc -n istio-system istiocoredns -o jsonpath={.spec.clusterIP})&amp;quot;]}
+EOF&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;the-postcard-sample-application---part-ii&quot;&gt;&lt;a href=&quot;#the-postcard-sample-application---part-ii&quot; aria-label=&quot;the postcard sample application   part ii permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Postcard sample application - part II&lt;/h3&gt;
+&lt;p&gt;On the second cluster we deploy the messenger app that simply sends a message back. The message can be configures via an environment variable. Install the messenger the app with the &lt;code class=&quot;language-text&quot;&gt;kubectl&lt;/code&gt; command below.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Deploy greeter pod and service
+curl -L \
+  https://raw.githubusercontent.com/npalm/cross-cluster-mesh-postcard/master/mesh/demo/messenger/messenger.yaml \
+  | sed &amp;quot;s/MESSAGE_TEXT/All good from Google Cloude/&amp;quot; \
+  | kubectl apply -f -&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Only one step left now. We need to configure the first cluster with a service entry so the mesh knows how to route calls for &lt;code class=&quot;language-text&quot;&gt;messanger.default.global&lt;/code&gt;. We switch back to the terminal where we have created the first cluster on Amazon. And lookup using the kubeconfig from the second cluster the ip address of the ingress loadbalancer. Next we create a service entry.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Lookup the ingress ip address
+export CLUSTER_GW_ADDR=$(kubectl \
+  --kubeconfig=kubeconfig-istio-2.config \
+  get svc --selector=app=istio-ingressgateway -n istio-system \
+  -o jsonpath=&amp;#39;{.items[0].status.loadBalancer.ingress[0].ip}&amp;#39;)
+echo $CLUSTER_GW_ADDR
+
+# Create a service entry
+kubectl apply -f - &amp;lt;&amp;lt;EOF
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: messenger
+spec:
+  hosts:
+  - messenger.default.global
+  location: MESH_INTERNAL
+  ports:
+  - name: http1
+    number: 3000
+    protocol: http
+  resolution: DNS
+  addresses:
+  - 127.127.42.69
+  endpoints:
+  - address: $CLUSTER_GW_ADDR
+    ports:
+      http1: 15443 # Do not change this port value
+EOF&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now our postcard application should get the message from the second cluster, go back to the browser and refresh the page. You should now see card as below.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 67.53782668500688%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAABu0lEQVQoz21SPU/DMBTMz2ZmgA0hGCgSEkiVYEDsbExIjAiEKlAr2qSxHef724kbl3PSpqFwg2U/v3vvfH6GUmrdottUVVUUhRCiKIu6rhHJsqwsS9U0qlmFSZKkKeV+lue4MtQAODPKgiB0Xdf3PKyIUEIch6VpWtfi4OxyfH9+Mh49v35o8nqLjhyGYRzHWAPfz9IMEQjJ81wLEeJ4dHF6dcisxzDimsw5RyrWIAhA831/uVxOJhPTXODYk1FalNX1w83o9ujp5U41GXoZpmki27IsbCili8ViNpuhhG0THHtFHYhrv329f31/SlnpzkgFjRAyn8+n0ykKMcZwIaVEQxiEoOM4KAH/mqbR5Rq1Wq0GhukGanPXtkJq9wrUcjnXzy4KOA8jAFGJjWE9bb0TqDtHUQQ7PM8DHw4mCarFyRZg7dzesx3C0BbZMBJ2QjkbACo2stf/QdYS5Tu3UaJoZUM8NCOOKfr1z/tkKTEYe27vwZBbQCdejtR+043nX24/jgZkQAyaaBPSpLUUp7QrAfSbnowYRrV9M7yRdeB7xLYxxoxSj3P8DSOEEgqfKCWuy+H7sLOUWtQPYQYelli44ncAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/75c36dfd28c1fd9ca137ef41c1ed2210/cc182/postcard-2.webp 148w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/f7e40/postcard-2.webp 295w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/1a2f4/postcard-2.webp 590w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/4837b/postcard-2.webp 885w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/2f819/postcard-2.webp 1180w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/9c8b8/postcard-2.webp 1454w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/75c36dfd28c1fd9ca137ef41c1ed2210/cf440/postcard-2.png 148w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/d2d38/postcard-2.png 295w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/b9e4f/postcard-2.png 590w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/f9b6a/postcard-2.png 885w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/2d849/postcard-2.png 1180w,
+/static/75c36dfd28c1fd9ca137ef41c1ed2210/7aa09/postcard-2.png 1454w&quot;
+          sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/75c36dfd28c1fd9ca137ef41c1ed2210/b9e4f/postcard-2.png&quot;
+          alt=&quot;postcard&quot;
+          title=&quot;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;That is all you need to do for creating a cross cluster service mesh.&lt;/p&gt;
+&lt;h2 id=&quot;cleanup&quot;&gt;&lt;a href=&quot;#cleanup&quot; aria-label=&quot;cleanup permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cleanup&lt;/h2&gt;
+&lt;p&gt;The cleanup steps below assume you created fresh cluster and don’t use them for hosting other applications. The Amazon cluster was created via &lt;code class=&quot;language-text&quot;&gt;eksctl&lt;/code&gt;. This tool actually create cloud formation stacks in Amazon. Before you delete the stack, you need to delete the load balancer created by Istio. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Find the load balancer
+aws elb describe-load-balancers | jq -r &amp;quot;.LoadBalancerDescriptions[].LoadBalancerName&amp;quot;
+
+# delete the load balancer  
+aws elb delete-load-balancer --load-balancer-name &amp;lt;lb-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can delete the cluster, the deletion is a asynchronous process. Ensure you verify the deletion went well. In case it fails, happens many times to me. Delete the VPC and retry the delete via cloud formation.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;delete cluster --name mesh-1 --region=eu-central-1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For Google Cloud the deletion is very easy. Deletion of the cluster will delete all dependent resources.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cloud container clusters delete --zone europe-west3-b $CLUSTER_NAME&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;acknowledgements&quot;&gt;&lt;a href=&quot;#acknowledgements&quot; aria-label=&quot;acknowledgements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The example used in the blog is inspired by a great talk from Matt Turner at the KubeCon - CloudNativeCon 2019 in Barcelona. His talk and example is available in the blog post &lt;a href=&quot;https://mt165.co.uk/speech/cross-cluster-calls-istio-1-1-kubecon-eu-19/&quot;&gt;Cross-cluster Calls Made Easy with Istio 1.1&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Cloud Run]]></title><description><![CDATA[IntroductionLast week at the Google Next in San Francisco, Google announced Cloud Run. A new platform to enable developers without any…]]></description><link>https://040code.github.io//2019-04-18-cloudrun/</link><guid isPermaLink="false">https://040code.github.io//2019-04-18-cloudrun/</guid><pubDate>Thu, 18 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;introduction&quot;&gt;&lt;a href=&quot;#introduction&quot; aria-label=&quot;introduction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Last week at the &lt;a href=&quot;https://cloud.withgoogle.com/next/sf/&quot;&gt;Google Next&lt;/a&gt; in San Francisco, Google announced &lt;a href=&quot;https://cloud.google.com/run/&quot;&gt;Cloud Run&lt;/a&gt;. A new platform to enable developers without any infrastructure to run Docker containers on Google Cloud.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Cloud Run is a managed compute platform that enables you to run stateless containers that are invocable via HTTP requests. Cloud Run is serverless: it abstracts away all infrastructure management, so you can focus on what matters most — building great applications. It is built from &lt;a href=&quot;https://github.com/knative/&quot;&gt;Knative&lt;/a&gt;, letting you choose to run your containers either fully managed with Cloud Run, or in your Google Kubernetes Engine cluster with Cloud Run on GKE.&lt;/p&gt;
