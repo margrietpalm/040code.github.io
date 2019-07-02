@@ -10,6 +10,7 @@ asciinema:   false
 imageFb:    ./2019-07-01-multi-cloud-mesh-fb.png
 imageTw:    ./2019-07-01-multi-cloud-mesh-tw.png
 type:        post
+comments:   true
 tags: 
   - kubernetes
   - service mesh
