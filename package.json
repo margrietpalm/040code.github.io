@@ -32,7 +32,7 @@
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.6.1",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
@@ -41,7 +41,7 @@
     "prettier": "^1.12.0",
     "puppeteer": "^1.9.0",
     "semantic-release": "^15.13.12",
-    "yaml": "1.5.1"
+    "yaml": "1.0.0"
   },
   "homepage": "https://040code.github.io",
   "keywords": [
