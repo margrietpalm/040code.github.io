@@ -62,7 +62,7 @@ eksctl create cluster \
   --region eu-central-1 \
   --version 1.13 \
   --node-type t3.medium \
-  --nodes 1 \
+  --nodes 2 \
   --nodes-min 2 \
   --nodes-max 4 
   --node-ami auto \
