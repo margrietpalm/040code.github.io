@@ -1,12 +1,12 @@
 ---
-slug:       "2019/08/15/please-a-bit-more-secure-shell"
+slug:       "2019/08/27/please-a-bit-more-secure-shell"
 title:      "Avoiding secrets in plain text"
 subtitle:   "Please a bit more security in my cli"
-date:       2019-08-01
+date:       2019-08-27
 #cover:      ./evoluon.jpg
 #coverDescription: "Evoluon"
 #coverLink:   "https://goo.gl/maps/WPrtxowKszHqgLNw9"
-asciinema:   false
+asciinema:   true
 #imageFb:    ./2019-07-01-multi-cloud-mesh-fb.png
 #imageTw:    ./2019-07-01-multi-cloud-mesh-tw.png
 type:        post
@@ -19,9 +19,20 @@ authors:
   - niek
 ---
 
+
+# Avoiding storing secrets in plain text
+
+*This post guide you to store your AWS secrets secure in a password store and use them easy in your bash shell.*
+
+<p style="text-align: right">
+  <a href="https://github.com/npalm/aws-auth" target="sourcecode">
+  <i class="fab fa-github" style="font-size: 200%">&nbsp;</i>Source code for this post</a></p>
+
+
 Last week I became a happy owner of a new and fresh Mac. That it is a Mac is not even that important for this post. So I tasks my self with setting my system up a bit better, reproducible and more secure. 
 
 So once I had my software and main configuration installed only a few challenged related to protection and security are left. First I would like to sign my GIT commits. Secondly I would find a solution for handling all kind of secrets that on my systems end up in plain text file. Quite crazy nowadays, now using a password manager is becoming quite common. But the challenge is always to find a solution that is secure and also works.
+
 
 ## Please no plain secrets
 I am using AWS a lot, and unfortunately AWS has not a very good solution to store your secrets encrypted, or even avoid storing them at all. Using secrets in the environment is quite common for many systems. And on your production systems we use typically a system like Vault to keep the secrets secure. 
@@ -100,3 +111,7 @@ aws-mfa-login accountX 123456
 # verify you can access your account:
 aws sts get-caller-identity
 ```
+
+<asciinema-player src="/2019/08/27/aws-secrets/awsmfa.json"
+  cols="180" rows="15" autoplay="true" loop="true" speed="1.0">
+</asciinema-player>

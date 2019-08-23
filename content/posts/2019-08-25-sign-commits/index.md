@@ -1,8 +1,8 @@
 ---
 slug:       "2019/08/15/please-a-bit-more-secure-shell"
-title:      "Sign commits"
-subtitle:   "Prove you git changes"
-date:       2019-08-01
+title:      "Configuring Git"
+subtitle:   "Sign and multiple identities"
+date:       2019-08-25
 #cover:      ./evoluon.jpg
 #coverDescription: "Evoluon"
 #coverLink:   "https://goo.gl/maps/WPrtxowKszHqgLNw9"
@@ -25,8 +25,7 @@ Installing software packages is not hard anymore. Several package managers such 
 
 Most of you configuration will be store in so called `dotfiles` also for handling dotfiles there are several good options out and many post can be found. I personally like to use [stow](https://www.gnu.org/software/stow/) to link my dotfiles. 
 
-
-So once I had my software and main configuration installed only a few challenged related to protection and security are left. I never took simply the time to setup my Git configuration well. So two things were really missing, signing and handle multiple Git identities. So let's get them right this time.
+So once I had my software and main configuration installed only a few challenged related to protection and security are left. I never took simply the time to setup my Git configuration well. Two things were really missing, signing and handle multiple Git identities. So let's get them right this time.
 
 ## Signing my commits
 Signing digital content is not a new topic, so I will keep it short. For signing your Git commits you need to setup GPG key. An easy way would be using [Keybase](https://keybase.io). And manage your GPG key via Keybase. A second option is to generate your GPG keys using GNU GPG. Another handy tool to let your GPG password store in Keychain is [GPG suite](https://gpgtools.org/).
@@ -82,3 +81,34 @@ Now you are ready to sign your commits by adding the parameter `-S`. or configur
 ```bash
 git config --global commit.gpgsign true
 ```
+
+## Multiple Git identities.
+I have to deal with at least two Git identities, one based on my work mail and a second one for my public profile on GitHub. For the signing part this is not an issue at all since you can add multiple identities to a GPG key. 
+
+It is not hard to solve this issue if you are ok to organize you local code based on the identity. So for example choose a different root directory for your private and work repo's. You can then activate a Git config based on the dir where you code is. This will result in a `~/.gitconfig` file a shown below.
+
+```
+[user]
+	name = Your Name
+	email = your.mail@home.com
+	signingkey = KEY_ID
+[gpg]
+	program = gpg
+
+[includeIf "gitdir:~/projects/work/"]
+    path = ~/projects/work/.gitconfig
+
+[includeIf "gitdir:~/projects/home/"]
+    path = ~/projects/home/.gitconfig
+
+[commit]
+	gpgsign = true
+```
+
+Next add a `.gitconfig` file in the dir that is mentioned in `includeIf`. So for example add the following Git config in `~/projects/work/.gitconfig`.
+```
+[user]
+	email = your.mail@work.com
+```
+
+As soon you enter a directory below `~/projects/work/` your work email will be used for Git commits.
