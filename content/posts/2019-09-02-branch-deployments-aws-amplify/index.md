@@ -6,8 +6,8 @@ date:       2019-09-02
 cover:      ./watertoren.jpg
 coverDescription: "Watertoren"
 coverLink:   "https://goo.gl/maps/SM34eDmZL1apETVx6"
-imageFb:    ./2019-09-02-/automating-the-manual-aws-amplify-deploy-fb.png
-imageTw:    ./2019-09-02-/automating-the-manual-aws-amplify-deploy-tw.png
+imageFb:    ./2019-09-02/automating-the-manual-aws-amplify-deploy-fb.png
+imageTw:    ./2019-09-02/automating-the-manual-aws-amplify-deploy-tw.png
 asciinema:   true
 type:        post
 comments:    false
