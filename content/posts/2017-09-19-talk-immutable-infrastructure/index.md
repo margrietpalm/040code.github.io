@@ -6,8 +6,8 @@ subtitle:   "Devops Days Riga 2017"
 date:       2017-09-19
 authors:     [niek]
 cover: "./strijp-s-ols.png"
-imageFb:    "./2017-09-19-immutable-infrastructure-fb.png"
-imageTw:    "./2017-09-19-immutable-infrastructure-tw.png"
+imageFb:    ./2017-09-19-immutable-infrastructure-fb.png
+imageTw:    ./2017-09-19-immutable-infrastructure-tw.png
 tags:       [terraform, aws, docker, microservices]
 type:        post
 ---

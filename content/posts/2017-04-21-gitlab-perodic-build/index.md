@@ -6,8 +6,8 @@ subtitle:   "Trigger builds based on a crontab"
 date:       2017-04-21 12:21:00
 authors:     [niek]
 cover: "lichtjesroute.jpg"
-imageFb: "./2017-04-21-gitlab-perodic-build-fb.png"
-imageTw: "./2017-04-21-gitlab-perodic-build-tw.png"
+imageFb: ./2017-04-21-gitlab-perodic-build-fb.png
+imageTw: ./2017-04-21-gitlab-perodic-build-tw.png
 tags: [gitlab, docker]
 type:        post
 ---

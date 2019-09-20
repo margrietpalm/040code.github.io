@@ -6,8 +6,8 @@ subtitle:   "How to create a brew package"
 date:       2018-08-08
 authors:    [jeroen]
 cover:      "./vanmoll-brew.jpg"
-imageFb:    "./2018-08-08-microhack-brew-your-code-fb.png"
-imageTw:    "./2018-08-08-microhack-brew-your-code-tw.png"
+imageFb:    ./2018-08-08-microhack-brew-your-code-fb.png
+imageTw:    ./2018-08-08-microhack-brew-your-code-tw.png
 tags:       [microhack, mac, brew]
 type:        post
 ---

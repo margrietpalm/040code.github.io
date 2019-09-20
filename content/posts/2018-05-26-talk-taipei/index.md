@@ -8,8 +8,8 @@ authors:     [niek]
 cover:      "./strijp-s-ols.png"
 coverLink:  "https://goo.gl/maps/9vKN3aZ5KdT2"
 coverDescription: "Leidingstraat, Strijp S"
-imageFb:    "./2018-05-26-immutable-infrastructure-taipei-fb.png"
-imageTw:    "./2018-05-26-immutable-infrastructure-taipei-tw.png"
+imageFb:    ./2018-05-26-immutable-infrastructure-taipei-fb.png
+imageTw:    ./2018-05-26-immutable-infrastructure-taipei-tw.png
 tags:       [terraform, aws, docker, microservices]
 type:        post
 ---

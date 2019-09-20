@@ -6,8 +6,8 @@ subtitle:   "Enabling discovery for Spring Cloud on AWS ECS"
 date:       2017-04-20 14:22:00
 authors:     [niek]
 cover: "./silly-walk-this-way-dommeltunnel.png"
-imageTw: "./2019-04-20-discovery-agent-tw.png"
-imageFb: "./2019-04-20-discovery-agent-fb.png"
+imageTw: ./2019-04-20-discovery-agent-tw.png
+imageFb: ./2019-04-20-discovery-agent-fb.png
 tags: [docker, aws, spring]
 type:        post
 ---

@@ -5,8 +5,8 @@ slug:            "2018/08/22/maze-generation"
 subtitle:        "Generating Mazes from the REPL"
 authors:         [maarten]
 cover:           "./htc-roof.jpg"
-imageFb:         "./2018-08-22-maze-generation-fb.png"
-imageTw:         "./2018-08-22-maze-generation-tw.png"
+imageFb:         ./2018-08-22-maze-generation-fb.png
+imageTw:         ./2018-08-22-maze-generation-tw.png
 tags:            [clojure, functional]
 date:            "2018-08-22"
 published:       true

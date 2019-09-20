@@ -6,8 +6,8 @@ subtitle:   "Building and shipping in one Docker build"
 date:       2017-05-07
 authors:     [niek]
 cover: "./containers-strijp-s.png"
-imageTw: "./2017-05-07-docker-multi-stage-builds-tw.png"
-imageFb: "./2017-05-07-docker-multi-stage-builds-fb.png"
+imageTw: ./2017-05-07-docker-multi-stage-builds-tw.png
+imageFb: ./2017-05-07-docker-multi-stage-builds-fb.png
 tags:       [docker]
 type:        post
 ---
