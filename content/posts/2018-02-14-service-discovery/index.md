@@ -8,8 +8,8 @@ authors:    [niek]
 cover:      "./holstlaan-dommel.jpg"
 coverLink:  "https://goo.gl/maps/NSJUxqvPzc32"
 coverDescription: "Dommel / Professor Holstlaan"
-imageTw:    "./2018-02-14-service-discovery-on-aws-tw.png"
-imageFb:    "./2018-02-14-service-discovery-on-aws-fb.png"
+imageTw:    ./2018-02-14-service-discovery-on-aws-tw.png
+imageFb:    ./2018-02-14-service-discovery-on-aws-fb.png
 tags:       [aws, spring, docker]
 type:        post
 ---

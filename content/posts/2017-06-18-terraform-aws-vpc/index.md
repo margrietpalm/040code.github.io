@@ -6,8 +6,8 @@ subtitle:   "A terraform module for a VPC with Private Subnets"
 date:       2017-06-18
 authors:     [niek]
 cover: "./piazza.jpg"
-imageTw:    "./2017-06-18-coding-a-vpc-in-terraform-tw.png"
-imageFb:    "./2017-06-18-coding-a-vpc-in-terraform-fb.png"
+imageTw:    ./2017-06-18-coding-a-vpc-in-terraform-tw.png
+imageFb:    ./2017-06-18-coding-a-vpc-in-terraform-fb.png
 tags:       [aws, terraform]
 comments:   false
 type:        post

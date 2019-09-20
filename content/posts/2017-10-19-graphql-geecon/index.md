@@ -6,8 +6,8 @@ subtitle:   "GeeCON talk - The Next API Language"
 date:       2017-10-19
 authors:     [niek]
 cover: "./irisbuurt.jpg"
-imageTw:    "./2017-10-19-graphql-geecon-tw.png"
-imageFb:    "./2017-10-19-graphql-geecon-fb.png"
+imageTw:    ./2017-10-19-graphql-geecon-tw.png
+imageFb:    ./2017-10-19-graphql-geecon-fb.png
 tags:       [graphql]
 type:        post
 ---

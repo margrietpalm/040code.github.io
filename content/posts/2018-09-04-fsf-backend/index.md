@@ -8,8 +8,8 @@ authors:    [jeroen, niek]
 cover:      "./kanaal_nre.jpg"
 coverDescription: "Kanaaldijk-Zuid"
 coverLink:  "https://goo.gl/maps/uAxsykRyU9t"
-imageFb:    "./2018-09-05-full-stack-fest-2018-fb.png"
-imageTw:    "./2018-09-05-full-stack-fest-2018-tw.png"
+imageFb:    ./2018-09-05-full-stack-fest-2018-fb.png
+imageTw:    ./2018-09-05-full-stack-fest-2018-tw.png
 tags:       [iot, cloud, fullstack, microservices, security]
 comments:   true
 type:        post

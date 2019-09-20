@@ -5,8 +5,8 @@ slug:            "2018/03/04/verlet-integration"
 subtitle:        "Physics Simulation in Clojure"
 authors:         [maarten]
 cover:           "./ehv-noord.jpg"
-imageFb:         "./2018-03-04-verlet-integration-fb.png"
-imageTw:         "./2018-03-04-verlet-integration-tw.png"
+imageFb:         ./2018-03-04-verlet-integration-fb.png
+imageTw:         ./2018-03-04-verlet-integration-tw.png
 tags:            [clojure, functional]
 date:            "2018-03-04"
 published:       true

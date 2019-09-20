@@ -6,8 +6,8 @@ subtitle:   "Experimenting with Clojure"
 date:       2017-07-01
 authors:     [maarten]
 cover: "./htc.jpg"
-imageFb:    "./2017-07-01-visualising-bezier-curves-fb.png"
-imageTw:    "./2017-07-01-visualising-bezier-curves-tw.png"
+imageFb:    ./2017-07-01-visualising-bezier-curves-fb.png
+imageTw:    ./2017-07-01-visualising-bezier-curves-tw.png
 tags:       [clojure, bézier, functional, incanter]
 comments:   false
 type:        post

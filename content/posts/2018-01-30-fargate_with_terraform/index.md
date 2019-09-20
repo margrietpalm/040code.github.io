@@ -8,8 +8,8 @@ authors:     [niek]
 cover:      "./strijps-containers.jpg"
 coverLink:  "https://goo.gl/maps/frNLw6shgEP2"
 coverDescription: "Containers Leidingstraat - Strijp S"
-imageTw:    "./2018-01-30-microhack-fargate-tw.png"
-imageFb:    "./2018-01-30-microhack-fargate-fb.png"
+imageTw:    ./2018-01-30-microhack-fargate-tw.png
+imageFb:    ./2018-01-30-microhack-fargate-fb.png
 tags:       [aws, terraform, docker, microhack]
 asciinema:  true
 type:        post
