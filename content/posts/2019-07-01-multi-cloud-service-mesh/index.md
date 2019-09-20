@@ -7,8 +7,8 @@ cover:      ./evoluon.jpg
 coverDescription: "Evoluon"
 coverLink:   "https://goo.gl/maps/WPrtxowKszHqgLNw9"
 asciinema:   false
-imageFb:    ./2019-07-01-multi-cloud-mesh-fb.png
-imageTw:    ./2019-07-01-multi-cloud-mesh-tw.png
+imageFb:    ./2019-07-01-cross-cluster-service-mesh-fb.png
+imageTw:    ./2019-07-01-cross-cluster-service-mesh-tw.png
 type:        post
 comments:   true
 tags: 
