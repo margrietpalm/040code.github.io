@@ -43,6 +43,10 @@ module.exports = {
       label: 'Stefan van den Oord',
       url: '/authors/stefan',
     },
+    {
+      label: 'Thales Sousa',
+      url: '/authors/thales',
+    },
   ],
   // Footer information (ex: Github, Netlify...)
   footerLinks: [
