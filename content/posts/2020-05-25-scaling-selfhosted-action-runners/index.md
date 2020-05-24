@@ -1,16 +1,16 @@
 ---
-slug:        "2020/05/25/scaling-selfhosted-action-runners"
-title:       "Scaling GitHub Action Runners"
-subtitle:    "Serverless scaling self hosted runners on AWS spot instances"
-date:        2020-05-25
-cover:       ./cover.jpg
-coverDescription: "Van Abbe"
-coverLink: "https://goo.gl/maps/fp8Q2UYVZbE1kfM7A"
-imageFb:     ./2020-05-25-scaling-selfhosted-action-runners-fb.png
-imageTw:     ./2020-05-25-scaling-selfhosted-action-runners-tw.png
-type:        post
-tags: 
-  - github 
+slug: '2020/05/25/scaling-selfhosted-action-runners'
+title: 'Scaling GitHub Action Runners'
+subtitle: 'Serverless scalable self hosted runners on AWS spot instances'
+date: 2020-05-25
+cover: ./cover.jpg
+coverDescription: 'Van Abbe'
+coverLink: 'https://goo.gl/maps/fp8Q2UYVZbE1kfM7A'
+imageFb: ./2020-05-25-scaling-selfhosted-action-runners-fb.png
+imageTw: ./2020-05-25-scaling-selfhosted-action-runners-tw.png
+type: post
+tags:
+  - github
   - ci
   - aws
   - terraform
@@ -20,9 +20,7 @@ authors:
   - niek
 ---
 
-
-*This post explains how to run GitHub actions on self hosted scalable runners on AWS spot instances.*
-
+_This post explains how to run GitHub actions on self hosted scalable runners on AWS spot instances._
 
 <p style="text-align: right">
   <a href="https://github.com/philips-labs/terraform-aws-github-runner" target="sourcecode">
@@ -44,19 +42,19 @@ The GitHub self hosted action runner is an agent that you need to install on any
 
 In GitHub every time a workflow is triggered, a `check event` is created. Can we use this event to decide to scale a runner? Yes if we find a way to receive and listen for the event. Here there seems two options, using the webhook on repo or org level. Or use a GitHub app, we will use the GitHub app option. The GitHub app can sent for every `check run` event a message to our webhook. This webhook we can easy implement with a AWS Lambda function. This lambda can verify the event, run some other checks and decide to create a EC2 spot instance to facilitate the execution of the workflow. So we are limiting our selves to linux runners with docker support.
 
-![idea](idea.png "concept")
+![idea](idea.png 'concept')
 
 The last question we had was, how to scale down. Again we could listen for event and next try to scale down. But it would be not that easy to find out which instance we should remove, and maybe is already executing another workload. So we took a slightly different and much simpler approach. Just remove every x minutes runners that are not busy.
 
 You might think why not using [Kubernetes](https://kubernetes.io/)? The reason for us is quit simple. First we would like to have a solution that could scale really from zero without making any costs. Secondly, with Kubernetes we enter a other model of running the GitHub agent, which is not supported (yet?). This only introduce some extra obstacles as managing docker in docker. For those those reason we took this simple and straightforward approach.
 
-### Architecture
+## Architecture
 
 Before we build scalable runners on AWS, we discuss the architecture in a bit more detail. So on AWS we need several infrastructure components and a component to orchestrate the life cycle of the action runners. All infra structure will be create using [HashiCorp Terraform](https://www.terraform.io/). The orchestration layer is build with AWS lambda. All the lambda functions are written in [TypeScript](https://www.typescriptlang.org/) and compiled to NodeJs single file with [zeit ncc](https://github.com/zeit/ncc).
 
 For the orchestration we build 4 different lambda's. Each lambda serves a different purpose. The action runners will run on AWS spot instances.
 
-![architecture](architecture.svg "architecture")
+![architecture](architecture.svg 'architecture')
 
 ### Webhook
 
@@ -76,15 +74,18 @@ This lambda will download the action runner binary to avoid unnecessary latency 
 
 ## Build it
 
+Time to build the idea. In the next steps we create a GitHub app, setup Terraform, configure an example repo to test our runners.
+
 ### GitHub app
 
-Time to build the idea. As mentioned above there are two scenario's two options for running the self hosted runner, repo level or org level. Our module supports both but for this blog we use the repo level runner as example. The example below is based on the [default example](https://github.com/philips-labs/terraform-aws-github-runner/tree/master/examples/default) in the Terraform module.
+As mentioned above there are two scenario's two options for running the self hosted runner, repo level or org level. Our module supports both but for this blog we use the repo level runner as example. The example below is based on the [default example](https://github.com/philips-labs/terraform-aws-github-runner/tree/master/examples/default) in the Terraform module.
 
 Everything starts with the event that we need to receive. So first we create a [GitHub App](https://github.com/settings/apps/new?name=AWS%20Spot%20Runner&public=false), for creating an app in you organization go to you organization settings and select GitHub apps. On the app creation page you only need to fill in the name, homepage, and un check the webhook. We will activate the webhook once we know our endpoint.
 
-![app](github-app.png "create GitHub app")
+![app](github-app.png 'create GitHub app')
 
 Next hit create app, you will be re-directed to the app overview page. Make a note of the following generated id's, and generate the ssh private key on the bottom of this page.
+
 ```
 App ID:         12345
 Client ID:      Iv1.abcd1234
@@ -126,7 +127,6 @@ Next run `terraform init && terraform apply` the lambda artifacts will be downlo
 
 Now we will create all required AWS resources and deploy the lambda functions. Besides this module we also need a vpc as well. We a VPC with a public [terraform AWS VPC](https://github.com/terraform-aws-modules/terraform-aws-vpc) module, you can use your own VPC as well. Create a new workspace and the code below to the `main.tf`.
 
-
 ```HCL
 provider "aws" {
   region  = local.aws_region
@@ -156,7 +156,6 @@ module "vpc" {
 ```
 
 You can already run and apply the terraform code, once we are complete with the setup. We can no add the GitHub action runner module. Events sent on to the webhook will be signed with a secret, therefore we generate a password with [Terraform random provider](https://www.terraform.io/docs/providers/random/). Ensure you set the variables for the lambda zip to the download lambda artifacts. And also add the ids, keys and base64 encoded secret for the GitHub app to the configuration.
-
 
 ```HCL
 resource "random_password" "random" {
@@ -200,23 +199,21 @@ output "webhook" {
 
 Save your configuration and run `terraform init` and `terraform apply`. Once Terraform is finished we will trigger the lambda function for the syncing the distribution one time manually to ensure our cache is filled.
 
-```bash 
+```bash
 aws lambda invoke --function-name \
   $(terraform output -json lambda_syncer | jq -r) respone.json
 ```
 
 ### Configure the GitHub App part 2
 
-Go back to your GitHub app and activate the webhook, and provide the endpoint and secret. Don't forget to save the changes. Now you can subscribe for events. Go to the section *permissions and events*, grant permission permission on repo as follow, check your terraform output for the values. (`terraform output -json webhook`).
+Go back to your GitHub app and activate the webhook, and provide the endpoint and secret. Don't forget to save the changes. Now you can subscribe for events. Go to the section _permissions and events_, grant permission permission on repo as follow, check your terraform output for the values. (`terraform output -json webhook`).
 
 1. Administration (read, write) - required to register runner.
 2. Repository permissions Checks (read) - required to get check run events
 
 Scroll al the way to the bottom and check the box to subscribe to the check event.
 
-
-![github-app2](github-app2.png "Permissions and events.")
-
+![github-app2](github-app2.png 'Permissions and events.')
 
 > Note: for org level runners you need to grant the administration permission on org level instead of repo level.
 
@@ -226,11 +223,11 @@ We are all most done. As final step we will configure the self hosted runner for
 
 Go to your repo settings (or org settings), select actions and choose "Add runner". Run the provided instruction for you OS, as name provide some descriptive name as "dummy". In case you provided the terraform module extra labels, provide them here as well.
 
-![register-runner](register.png "Configure a dummy.")
+![register-runner](register.png 'Configure a dummy.')
 
 THe final step is to install the GitHub app we have created. Go to your [app settings](https://github.com/settings/apps/self-hosted-aws-spot-runners) and select install, now you can choose how to install the app. To only receive relevant events we choose to be repo specific and install the app to our test repo.
 
-![install-app](install-app.png "Install app.")
+![install-app](install-app.png 'Install app.')
 
 Thats it, time to test. First create a simple action workflow in an empty directory.
 
@@ -271,7 +268,7 @@ A bit later, the runner should be registered to your GitHub repo.
 
 And once registered it is normally a matter of seconds before the build starts.
 
-![workflow-run](run-workflow.png "Workflow run")
+![workflow-run](run-workflow.png 'Workflow run')
 
 Every 5 minutes the scale down lambda is executed, and if you not running any job you should see the runner is terminated.
 
@@ -281,4 +278,8 @@ In case you build runners are not starting or registering. The best you can do i
 
 ## Final thoughts
 
-... TODO ..
+It is already quit cool what you can doe with GitHub self hosted runners. But creating the setup as discussed requires some hacks and shortcuts. First of all it would be much easier once GitHub deliver the orchestration component, which reduce the whole to only managing a bit of cloud resources. For example having runners on a Kubernetes cluster including scaling can make it a lot easier to use.
+
+By delivery an APY for actions GitHub gives you the option to build your own setup, the fact that we always need to have a runner registered is quite an hack. Als the way for scaling down will not win a contest. The API is does not provide an option to verify an runner is still active. Also the cache of the distribution is bit of a hack to work around some crazy slow downloads that we had experienced.
+
+But given all those hacks we are still quite happy with the setup. Till the time GitHub will release components to orchestrate the life cycle of an action runner we will use this setup.
